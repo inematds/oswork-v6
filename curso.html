@@ -1,180 +1,174 @@
-<!doctype html>
-<html lang="pt-BR" data-theme="papel">
+<!DOCTYPE html>
+
+<html data-theme="papel" lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="curso" content="oswork6">
-<meta name="formato" content="formato-curso-v6">
-<title>OSWork — Organize seu ambiente de IA · INEMA.CLUB PRO</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/aula.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="oswork6" name="curso"/>
+<meta content="formato-curso-v6" name="formato"/>
+<title>OSWork v6 — Pare de refazer o que a IA te devolve · INEMA.CLUB PRO</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="assets/aula.css" rel="stylesheet"/>
 <script>(function(){try{var s=JSON.parse(localStorage.getItem("oswork6"));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute("data-theme",s.prefs.theme);}catch(e){}})();</script>
-</head>
+<link data-nome="Português" href="curso.html" hreflang="pt-BR" rel="alternate"/><link data-nome="English" href="en/curso.html" hreflang="en" rel="alternate"/><link data-nome="Español" href="es/curso.html" hreflang="es" rel="alternate"/></head>
 <body>
 <header class="bar"><div class="bar-inner">
-  <span class="brand"><a class="mark" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a><a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a><a class="course" href="landing.html">OSWork</a></span>
-  <a class="btn back" href="#trilha" hidden>← <span class="t">trilha</span></a>
-  <button class="btn" id="revbtn" hidden>revisar</button>
-  <button class="btn" id="prefsbtn" aria-label="Tamanho da letra e tema">Aa</button>
-  <button class="btn" id="menubtn" aria-label="Menu">☰</button>
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="landing.html">OSWork v6</a></span>
+<a class="btn back" hidden="" href="#trilha">← <span class="t">trilha</span></a>
+<button class="btn" hidden="" id="revbtn">revisar</button>
+<button aria-label="Tamanho da letra e tema" class="btn" id="prefsbtn">Aa</button>
+<button aria-label="Menu" class="btn" id="menubtn">☰</button>
 </div></header>
-
 <section class="view" id="v-trilha">
-  <div class="wrap">
-    <header class="t-hero">
-      <p class="kicker">OSWork · 7 aulas de uns 15 minutos</p>
-      <h1>Pare de <em>refazer</em> o que a IA te devolve</h1>
-      <p class="lead">Em sete aulas curtas você organiza o seu jeito de usar IA: pastas por assunto, uma ficha com as suas regras, um molde de pedido e uma rotina simples para conferir. Sem instalar nada.</p>
-      <figure class="cena"><img src="assets/img/trilha.webp" alt="Uma gestora e um professor, lado a lado numa mesa de trabalho arrumada, com pastas, um caderno e um notebook." width="1280" height="720"></figure>
-    </header>
-    <div class="statcards"></div>
-    <a class="continuar" href="#aula-1"></a>
-    <h2 class="sec-title">As aulas</h2>
-    <div class="aulas">
-    <a class="au" data-aula="1" href="#aula-1">
-      <img class="thumb" src="assets/img/aula-1.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 1</span><h3>Pedido completo, não pergunta solta</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="2" href="#aula-2">
-      <img class="thumb" src="assets/img/aula-2.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 2</span><h3>A régua de conferência</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="3" href="#aula-3">
-      <img class="thumb" src="assets/img/aula-3.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 3</span><h3>Uma pasta por frente de trabalho</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="4" href="#aula-4">
-      <img class="thumb" src="assets/img/aula-4.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 4</span><h3>A ficha com as suas regras</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="5" href="#aula-5">
-      <img class="thumb" src="assets/img/aula-5.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 5</span><h3>O molde que você reusa</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="6" href="#aula-6">
-      <img class="thumb" src="assets/img/aula-6.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 6</span><h3>Não perder o que já funcionava</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    <a class="au" data-aula="7" href="#aula-7">
-      <img class="thumb" src="assets/img/aula-7.webp" alt="" loading="lazy" width="96" height="72">
-      <div><span class="n">Aula 7</span><h3>O que você delega e o que continua seu</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
-    </a>
-    </div>
-  </div>
-  <footer class="pe">OSWork · INEMA.CLUB PRO · <a href="landing.html">sobre o curso</a></footer>
+<div class="wrap">
+<header class="t-hero">
+<p class="kicker">OSWork v6 · 7 aulas de uns 15 minutos</p>
+<h1>Pare de <em>refazer</em> o que a IA te devolve</h1>
+<p class="lead">Em sete aulas curtas você organiza o seu jeito de usar IA: pastas por assunto, uma ficha com as suas regras, um molde de pedido e uma rotina simples para conferir. Sem instalar nada.</p>
+<figure class="cena"><img alt="Uma gestora e um professor, lado a lado numa mesa de trabalho arrumada, com pastas, um caderno e um notebook." height="720" src="assets/img/trilha.webp" width="1280"/></figure>
+</header>
+<div class="statcards"></div>
+<a class="continuar" href="#aula-1"></a>
+<h2 class="sec-title">As aulas</h2>
+<div class="aulas">
+<a class="au" data-aula="1" href="#aula-1">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-1.webp" width="96"/>
+<div><span class="n">Aula 1</span><h3>Pedido completo, não pergunta solta</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="2" href="#aula-2">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-2.webp" width="96"/>
+<div><span class="n">Aula 2</span><h3>A régua de conferência</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="3" href="#aula-3">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-3.webp" width="96"/>
+<div><span class="n">Aula 3</span><h3>Uma pasta por frente de trabalho</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="4" href="#aula-4">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-4.webp" width="96"/>
+<div><span class="n">Aula 4</span><h3>A ficha com as suas regras</h3><p class="meta">15 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="5" href="#aula-5">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-5.webp" width="96"/>
+<div><span class="n">Aula 5</span><h3>O molde que você reusa</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="6" href="#aula-6">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-6.webp" width="96"/>
+<div><span class="n">Aula 6</span><h3>Não perder o que já funcionava</h3><p class="meta">14 min</p><div class="bar2"><i></i></div></div>
+</a>
+<a class="au" data-aula="7" href="#aula-7">
+<img alt="" class="thumb" height="72" loading="lazy" src="assets/img/aula-7.webp" width="96"/>
+<div><span class="n">Aula 7</span><h3>O que você delega e o que continua seu</h3><p class="meta">16 min</p><div class="bar2"><i></i></div></div>
+</a>
+</div>
+</div>
+<footer class="pe">OSWork v6 · INEMA.CLUB PRO · <a href="landing.html">sobre o curso</a></footer>
 </section>
-
-<section class="view" id="v-aula-1" data-aula="1" data-tempo="15min">
+<section class="view" data-aula="1" data-tempo="15min" id="v-aula-1">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 1 de 7</p>
-  <h1>Pedido completo, não <em>pergunta solta</em></h1>
-  <figure class="cena"><img src="assets/img/aula-1.webp" width="1280" height="720" alt="Uma gestora no fim da tarde lê no notebook uma resposta que vai ter de refazer, com uma pilha de papéis ao lado."></figure>
-  <p class="promise">Você consegue transformar uma pergunta solta num pedido completo e receber de volta um texto que usa sem reescrever.</p>
-  <p class="why">O retrabalho costuma aparecer no fim da tarde: a resposta chega, você lê e percebe que precisa refazer tudo. Quase sempre o problema está no que faltou no pedido. Esta aula resolve isso antes de você apertar enviar.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>A IA só sabe o que você escreve na caixa de mensagem.</li>
-      <li>Um pedido completo leva três coisas: <b>material</b>, <b>formato</b> e <b>critério de pronto</b>.</li>
-      <li>Antes de mandar fazer, pergunte o que está faltando.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 1 de 7</p>
+<h1>Pedido completo, não <em>pergunta solta</em></h1>
+<figure class="cena"><img alt="Uma gestora no fim da tarde lê no notebook uma resposta que vai ter de refazer, com uma pilha de papéis ao lado." height="720" src="assets/img/aula-1.webp" width="1280"/></figure>
+<p class="promise">Você consegue transformar uma pergunta solta num pedido completo e receber de volta um texto que usa sem reescrever.</p>
+<p class="why">O retrabalho costuma aparecer no fim da tarde: a resposta chega, você lê e percebe que precisa refazer tudo. Quase sempre o problema está no que faltou no pedido. Esta aula resolve isso antes de você apertar enviar.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>A IA só sabe o que você escreve na caixa de mensagem.</li>
+<li>Um pedido completo leva três coisas: <b>material</b>, <b>formato</b> e <b>critério de pronto</b>.</li>
+<li>Antes de mandar fazer, pergunte o que está faltando.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>A IA não conhece o seu trabalho</h2>
-  <p>Quando você abre uma conversa nova, do outro lado ninguém conhece o seu local de trabalho, a sua equipe, a sua turma ou o combinado da semana passada. A IA lê só o que está na caixa. O que você não conta, ela completa com o jeito mais comum de responder. E o mais comum quase nunca serve para você.</p>
-  <p>O que você entrega junto com o pedido se chama <span class="gterm" data-def="tudo o que você manda junto com o pedido: o texto original, os dados, um exemplo do que quer e a situação em que aquilo vai ser usado.">contexto</span>. Ele é a matéria-prima da resposta.</p>
-  <p data-ex="professor">Um professor pede "faça um resumo da aula de ontem". Recebe um texto sobre o tema em geral, que serviria para qualquer turma. Ele não colou o plano da aula. Também não disse a série nem avisou que era para quem faltou.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
-      <div class="tela-caso" data-rotulo="Pergunta solta">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Faça um resumo da aula de ontem.</p>
-          <p class="msg ia falha"><span class="quem">IA</span>Claro! A Revolução Industrial foi um período de grandes transformações econômicas e sociais que começou na Inglaterra no século XVIII…</p>
-        </div>
-        <p class="tela-nota ruim">Genérico: serve para qualquer turma do país. O professor vai ter de reescrever.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Com contexto">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Sou professor do 7º ano. Abaixo está o meu plano da aula de ontem. Faça um resumo para os alunos que faltaram, em até 10 linhas, com as 3 ideias principais.
+<h2><span class="n">1</span>A IA não conhece o seu trabalho</h2>
+<p>Quando você abre uma conversa nova, do outro lado ninguém conhece o seu local de trabalho, a sua equipe, a sua turma ou o combinado da semana passada. A IA lê só o que está na caixa. O que você não conta, ela completa com o jeito mais comum de responder. E o mais comum quase nunca serve para você.</p>
+<p>O que você entrega junto com o pedido se chama <span class="gterm" data-def="tudo o que você manda junto com o pedido: o texto original, os dados, um exemplo do que quer e a situação em que aquilo vai ser usado.">contexto</span>. Ele é a matéria-prima da resposta.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor pede "faça um resumo da aula de ontem". Recebe um texto sobre o tema em geral, que serviria para qualquer turma. Ele não colou o plano da aula. Também não disse a série nem avisou que era para quem faltou.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
+<div class="tela-caso" data-rotulo="Pergunta solta">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Faça um resumo da aula de ontem.</p>
+<p class="msg ia falha"><span class="quem">IA</span>Claro! A Revolução Industrial foi um período de grandes transformações econômicas e sociais que começou na Inglaterra no século XVIII…</p>
+</div>
+<p class="tela-nota ruim">Genérico: serve para qualquer turma do país. O professor vai ter de reescrever.</p>
+</div>
+<div class="tela-caso" data-rotulo="Com contexto">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Sou professor do 7º ano. Abaixo está o meu plano da aula de ontem. Faça um resumo para os alunos que faltaram, em até 10 linhas, com as 3 ideias principais.
 [plano da aula colado aqui]</p>
-          <p class="msg ia ok"><span class="quem">IA</span>Resumo para quem faltou (7º ano):
+<p class="msg ia ok"><span class="quem">IA</span>Resumo para quem faltou (7º ano):
 1. As máquinas mudaram o lugar do trabalho: da casa para a fábrica.
 2. …</p>
-        </div>
-        <p class="tela-nota bom">Mesmo assunto, mesma IA. Mudou só o que ela recebeu.</p>
-      </div>
-    </div>
-    <figcaption><b>Toque nos dois botões</b> e compare: a IA é a mesma, o que muda é o pedido.</figcaption>
-  </figure>
+</div>
+<p class="tela-nota bom">Mesmo assunto, mesma IA. Mudou só o que ela recebeu.</p>
+</div>
+</div>
+<figcaption><b>Toque nos dois botões</b> e compare: a IA é a mesma, o que muda é o pedido.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>Material, formato e critério de pronto</h2>
-  <p>Um pedido que funciona carrega três coisas. <b>O material</b> é o que ela precisa ler: o texto, os números, o exemplo. <b>O formato</b> é a forma da resposta: tamanho, tom e para quem vai. <b>O critério de pronto</b> é o que precisa aparecer para você aceitar o resultado.</p>
-  <p data-ex="gestora">Uma gestora precisava transformar uma norma de segurança de trinta páginas no cronograma do treinamento da equipe. Veja a diferença entre o primeiro pedido e o segundo.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Antes</span><p><b>Pedido:</b> "Monta um cronograma de treinamento com base nessa norma."</p><p><b>Resultado:</b> uma lista genérica de temas, sem carga horária. Ela reescreveu quatro vezes.</p></div>
-      <div class="depois"><span class="rot">Depois</span><p><b>Pedido:</b> norma colada + "tabela com 4 colunas: tema, horas, público e mês" + "só está pronto se cobrir os 5 temas exigidos pela norma".</p><p><b>Resultado:</b> a tabela certa na primeira vez, com um ajuste fino.</p></div>
-      <p class="saldo"><b>Saldo:</b> de quatro reescritas para um ajuste — uns vinte minutos devolvidos.</p>
-    </div>
-  </figure>
-  <details class="mais"><summary>Quer uma comparação do dia a dia?</summary><p>É como deixar o carro na oficina. "Dá uma olhada" gera uma ligação no meio da tarde. A ordem de serviço, com o barulho que você ouviu, o que quer resolvido e quando precisa do carro, deixa o mecânico trabalhar sem interromper você.</p></details>
+<h2><span class="n">2</span>Material, formato e critério de pronto</h2>
+<p>Um pedido que funciona carrega três coisas. <b>O material</b> é o que ela precisa ler: o texto, os números, o exemplo. <b>O formato</b> é a forma da resposta: tamanho, tom e para quem vai. <b>O critério de pronto</b> é o que precisa aparecer para você aceitar o resultado.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora precisava transformar uma norma de segurança de trinta páginas no cronograma do treinamento da equipe. Veja a diferença entre o primeiro pedido e o segundo.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Antes</span><p><b>Pedido:</b> "Monta um cronograma de treinamento com base nessa norma."</p><p><b>Resultado:</b> uma lista genérica de temas, sem carga horária. Ela reescreveu quatro vezes.</p></div>
+<div class="depois"><span class="rot">Depois</span><p><b>Pedido:</b> norma colada + "tabela com 4 colunas: tema, horas, público e mês" + "só está pronto se cobrir os 5 temas exigidos pela norma".</p><p><b>Resultado:</b> a tabela certa na primeira vez, com um ajuste fino.</p></div>
+<p class="saldo"><b>Saldo:</b> de quatro reescritas para um ajuste — uns vinte minutos devolvidos.</p>
+</div>
+</figure>
+<details class="mais"><summary>Quer uma comparação do dia a dia?</summary><p>É como deixar o carro na oficina. "Dá uma olhada" gera uma ligação no meio da tarde. A ordem de serviço, com o barulho que você ouviu, o que quer resolvido e quando precisa do carro, deixa o mecânico trabalhar sem interromper você.</p></details>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>Quem decide o que está bom é você</h2>
-  <p>Das três partes, a mais esquecida é o critério de pronto. Ele fica na nossa cabeça, e o que fica só na cabeça não chega do outro lado.</p>
-  <p>Um bom critério permite responder sim ou não, sem discussão. "Fica bom" é um desejo. "Precisa citar as três decisões" é um critério: você conta e confere.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Desejo</span><p>"Faça uma devolutiva legal para o aluno."</p><p>Não dá para conferir. Qualquer texto simpático passa.</p></div>
-      <div class="depois"><span class="rot">Critério</span><p>"1 acerto específico do texto do aluno, 1 coisa a melhorar, até 4 linhas, sem elogio genérico."</p><p>Dá para conferir em segundos.</p></div>
-    </div>
-    <figcaption>O cartão Critério foi escrito uma vez por um professor que corrige oitenta devolutivas por bimestre.</figcaption>
-  </figure>
-  <p data-ex="professor">Quando falta um item, o professor pede o ajuste só daquele ponto, e não do texto todo.</p>
-  <div class="quiz" data-answer="b">
-    <p class="qk">Teste-se</p>
-    <p class="q">Você pediu "um material sobre a nova regra para a equipe" e recebeu um texto correto e bem escrito, que ninguém usou. O que faltou?</p>
-    <button class="opt" data-k="a" data-fb="O texto estava correto, então a ferramenta não era o problema.">Uma ferramenta de IA mais avançada</button>
-    <button class="opt" data-k="b" data-fb="Sem dizer para quem é, em quantas linhas e o que precisa aparecer, qualquer resposta plausível cumpre o pedido — até uma que não serve.">O critério de pronto do pedido</button>
-    <button class="opt" data-k="c" data-fb="Mais detalhes sobre a empresa ajudam, mas não dizem o que é um resultado aceitável.">Mais informações sobre a empresa</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">3</span>Quem decide o que está bom é você</h2>
+<p>Das três partes, a mais esquecida é o critério de pronto. Ele fica na nossa cabeça, e o que fica só na cabeça não chega do outro lado.</p>
+<p>Um bom critério permite responder sim ou não, sem discussão. "Fica bom" é um desejo. "Precisa citar as três decisões" é um critério: você conta e confere.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Desejo</span><p>"Faça uma devolutiva legal para o aluno."</p><p>Não dá para conferir. Qualquer texto simpático passa.</p></div>
+<div class="depois"><span class="rot">Critério</span><p>"1 acerto específico do texto do aluno, 1 coisa a melhorar, até 4 linhas, sem elogio genérico."</p><p>Dá para conferir em segundos.</p></div>
+</div>
+<figcaption>O cartão Critério foi escrito uma vez por um professor que corrige oitenta devolutivas por bimestre.</figcaption>
+</figure>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Quando falta um item, o professor pede o ajuste só daquele ponto, e não do texto todo.</p>
+<div class="quiz" data-answer="b">
+<p class="qk">Teste-se</p>
+<p class="q">Você pediu "um material sobre a nova regra para a equipe" e recebeu um texto correto e bem escrito, que ninguém usou. O que faltou?</p>
+<button class="opt" data-fb="O texto estava correto, então a ferramenta não era o problema." data-k="a">Uma ferramenta de IA mais avançada</button>
+<button class="opt" data-fb="Sem dizer para quem é, em quantas linhas e o que precisa aparecer, qualquer resposta plausível cumpre o pedido — até uma que não serve." data-k="b">O critério de pronto do pedido</button>
+<button class="opt" data-fb="Mais detalhes sobre a empresa ajudam, mas não dizem o que é um resultado aceitável." data-k="c">Mais informações sobre a empresa</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">4</span>Antes de mandar fazer, pergunte o que falta</h2>
-  <p>Existe um passo de trinta segundos que evita boa parte do retrabalho. Escreva o pedido e termine com uma linha: <b>"antes de fazer, me diga o que falta para você entregar isso direito"</b>.</p>
-  <p data-ex="gestora">Uma gestora usou essa linha antes de pedir o aviso sobre a nova regra de reembolso. Veja o que voltou.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Escreva um aviso para a equipe sobre a nova regra de reembolso de despesas (regra colada abaixo). Um parágrafo, tom cordial.
+<h2><span class="n">4</span>Antes de mandar fazer, pergunte o que falta</h2>
+<p>Existe um passo de trinta segundos que evita boa parte do retrabalho. Escreva o pedido e termine com uma linha: <b>"antes de fazer, me diga o que falta para você entregar isso direito"</b>.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora usou essa linha antes de pedir o aviso sobre a nova regra de reembolso. Veja o que voltou.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Escreva um aviso para a equipe sobre a nova regra de reembolso de despesas (regra colada abaixo). Um parágrafo, tom cordial.
 <b>Antes de fazer, me diga o que falta para você entregar isso direito.</b></p>
-        <p class="msg ia ok"><span class="quem">IA</span>Antes de escrever, preciso saber duas coisas:
+<p class="msg ia ok"><span class="quem">IA</span>Antes de escrever, preciso saber duas coisas:
 1. A partir de que mês a regra vale?
 2. Ela vale para quem já pediu reembolso neste mês?</p>
-      </div>
-      <p class="tela-nota bom">As duas informações faltavam mesmo. Sem elas, o aviso sairia errado para a equipe inteira.</p>
-    </div>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>A lista do que falta às vezes vem longa. Você não precisa responder tudo: responda o que sabe e escreva "o resto, pode supor e me avisar o que supôs".</p></div>
+</div>
+<p class="tela-nota bom">As duas informações faltavam mesmo. Sem elas, o aviso sairia errado para a equipe inteira.</p>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>A lista do que falta às vezes vem longa. Você não precisa responder tudo: responda o que sabe e escreva "o resto, pode supor e me avisar o que supôs".</p></div>
 </section>
-
 <section class="practice" data-mode="prompt">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Refaça um pedido seu que voltou ruim</h3>
-  <p class="pgoal">Pronto quando a resposta voltar utilizável, só com ajuste fino. Cerca de 10 minutos.</p>
-  <p class="psafe">Nada aqui vai para ninguém além da sua própria conversa. Se a resposta vier estranha, apague e mande de novo mudando uma linha.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">MATERIAL
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Refaça um pedido seu que voltou ruim</h3>
+<p class="pgoal">Pronto quando a resposta voltar utilizável, só com ajuste fino. Cerca de 10 minutos.</p>
+<p class="psafe">Nada aqui vai para ninguém além da sua própria conversa. Se a resposta vier estranha, apague e mande de novo mudando uma linha.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">MATERIAL
 &lt;cole aqui o texto, os dados ou o exemplo que ela precisa ler&gt;
 
 FORMATO
@@ -186,38 +180,37 @@ CRITÉRIO DE PRONTO
 Só está pronto se: &lt;ex.: citar as 3 decisões e o responsável de cada uma&gt;
 
 Antes de fazer, me diga o que falta para você entregar isso direito.</pre></div>
-  <details class="mais"><summary>Veja o molde já preenchido por um professor</summary>
-    <p><b>Material:</b> [texto do aluno colado aqui]<br><b>Formato:</b> até 4 linhas, para um aluno do 7º ano, tom próximo e direto.<br><b>Critério de pronto:</b> 1 acerto específico do texto, 1 coisa a melhorar, sem elogio genérico.<br>Antes de fazer, me diga o que falta para você entregar isso direito.</p>
-  </details>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Copie o molde, abra o chat de IA que você já usa e troque o que está entre &lt; &gt; por um caso real desta semana.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Mande e leia a lista do que falta. Complete e só então peça para fazer.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Confira a resposta pelo critério de pronto, item por item, contando.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de transformar uma pergunta solta num pedido completo — e recebeu algo que dá para usar.</p>
+<details class="mais"><summary>Veja o molde já preenchido por um professor</summary>
+<p><b>Material:</b> [texto do aluno colado aqui]<br/><b>Formato:</b> até 4 linhas, para um aluno do 7º ano, tom próximo e direto.<br/><b>Critério de pronto:</b> 1 acerto específico do texto, 1 coisa a melhorar, sem elogio genérico.<br/>Antes de fazer, me diga o que falta para você entregar isso direito.</p>
+</details>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Copie o molde, abra o chat de IA que você já usa e troque o que está entre &lt; &gt; por um caso real desta semana.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Mande e leia a lista do que falta. Complete e só então peça para fazer.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Confira a resposta pelo critério de pronto, item por item, contando.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de transformar uma pergunta solta num pedido completo — e recebeu algo que dá para usar.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Pedido completo</h3>
-    <ol>
-      <li><span><b>Material</b>cole o texto, os dados ou um exemplo.</span></li>
-      <li><span><b>Formato</b>diga o tamanho, o tom e para quem é.</span></li>
-      <li><span><b>Critério de pronto</b>o que precisa aparecer para você aceitar. E, no fim: "me diga o que falta".</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe escrever um pedido que volta pronto para usar.</p>
-    <p class="na-action">Hoje, no próximo pedido que você já ia fazer, escreva as três partes antes de mandar. Guarde esse texto num documento do computador ou nas Notas do celular: na aula 5 ele vira um molde.</p>
-    <p class="na-hook">Na próxima aula: o pedido ficou bom, a resposta chegou bem escrita — e mesmo assim pode estar errada. Você vai montar uma régua para conferir em dois minutos.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Pedido completo</h3>
+<ol>
+<li><span><b>Material</b>cole o texto, os dados ou um exemplo.</span></li>
+<li><span><b>Formato</b>diga o tamanho, o tom e para quem é.</span></li>
+<li><span><b>Critério de pronto</b>o que precisa aparecer para você aceitar. E, no fim: "me diga o que falta".</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe escrever um pedido que volta pronto para usar.</p>
+<p class="na-action">Hoje, no próximo pedido que você já ia fazer, escreva as três partes antes de mandar. Guarde esse texto num documento do computador ou nas Notas do celular: na aula 5 ele vira um molde.</p>
+<p class="na-hook">Na próxima aula: o pedido ficou bom, a resposta chegou bem escrita — e mesmo assim pode estar errada. Você vai montar uma régua para conferir em dois minutos.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-2">próxima aula →</a></nav>
-<p class="aula-pe">Aula 1 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 1 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-1">
+<script id="cards-1" type="application/json">
 [
   {"front":"Você mandou o mesmo tipo de pedido de ontem e a resposta voltou genérica outra vez. Qual parte do pedido provavelmente ficou de fora?","back":"O material. Sem o texto, os dados ou o exemplo colados, ela responde do jeito mais comum — e o comum não tem a cara do seu trabalho."},
   {"front":"Qual a diferença entre pedir \"um comunicado curto\" e pedir \"até 120 palavras, em três parágrafos\"?","back":"O primeiro é um desejo e depende de opinião. O segundo dá para conferir contando."},
@@ -225,105 +218,100 @@ Antes de fazer, me diga o que falta para você entregar isso direito.</pre></div
 ]
 </script>
 </section>
-<section class="view" id="v-aula-2" data-aula="2" data-tempo="15min">
+<section class="view" data-aula="2" data-tempo="15min" id="v-aula-2">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 2 de 7</p>
-  <h1>A régua de <em>conferência</em></h1>
-  <figure class="cena"><img src="assets/img/aula-2.webp" width="1280" height="720" alt="Uma coordenadora de serviços de uma escola compara, de caneta na mão, dois resumos impressos com a proposta original antes de levá-los à direção."></figure>
-  <p class="promise">Você consegue conferir uma resposta de IA em menos de dois minutos, com uma régua de três itens que você escreve antes de pedir.</p>
-  <p class="why">A resposta errada chega com o mesmo tom da certa: bem escrita, organizada, sem hesitar. Sem uma lista anotada antes, você confere pela impressão de "está bem escrito". O custo aparece quando o número errado já saiu no material entregue.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Texto firme e bem escrito não prova que está certo.</li>
-      <li>Antes de pedir, anote três itens: <b>o dado que você já sabe</b>, <b>o que precisa bater</b> e <b>o que não pode aparecer</b>.</li>
-      <li>A decisão que afeta uma pessoa continua sendo sua.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 2 de 7</p>
+<h1>A régua de <em>conferência</em></h1>
+<figure class="cena"><img alt="Uma coordenadora de serviços de uma escola compara, de caneta na mão, dois resumos impressos com a proposta original antes de levá-los à direção." height="720" src="assets/img/aula-2.webp" width="1280"/></figure>
+<p class="promise">Você consegue conferir uma resposta de IA em menos de dois minutos, com uma régua de três itens que você escreve antes de pedir.</p>
+<p class="why">A resposta errada chega com o mesmo tom da certa: bem escrita, organizada, sem hesitar. Sem uma lista anotada antes, você confere pela impressão de "está bem escrito". O custo aparece quando o número errado já saiu no material entregue.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Texto firme e bem escrito não prova que está certo.</li>
+<li>Antes de pedir, anote três itens: <b>o dado que você já sabe</b>, <b>o que precisa bater</b> e <b>o que não pode aparecer</b>.</li>
+<li>A decisão que afeta uma pessoa continua sendo sua.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>O tom seguro não diz se está certo</h2>
-  <p>A IA não consulta uma lista de verdades. Ela monta cada frase escolhendo a palavra mais provável. Quando o material existe, a palavra provável costuma ser a certa. Quando falta material, ela preenche o buraco com algo que parece certo.</p>
-  <p>Por isso o dado inventado nunca vem com aviso. Ele chega na mesma frase firme, com a mesma calma do resto do texto.</p>
-  <p data-ex="professor">Um professor de geografia pediu um parágrafo de apoio sobre um rio brasileiro. Voltou um texto limpo, com a extensão e o ano de uma cheia histórica. A extensão estava certa. O ano da cheia estava trocado.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Escreva um parágrafo de apoio para o 6º ano sobre o rio São Francisco. Até 6 linhas.</p>
-        <p class="msg ia falha"><span class="quem">IA</span>O rio São Francisco tem cerca de 2.800 km e nasce na Serra da Canastra, em Minas Gerais. Em 1981, uma grande cheia atingiu várias cidades ribeirinhas…</p>
-      </div>
-      <p class="tela-nota ruim">A extensão confere com o livro. O ano da cheia, não. As duas frases têm exatamente o mesmo tom.</p>
-    </div>
-    <figcaption>Leia a resposta da IA: nada nela mostra qual frase está errada. Só o livro separa uma da outra.</figcaption>
-  </figure>
-  <div class="quiz" data-answer="c">
-    <p class="qk">Teste-se</p>
-    <p class="q">Duas respostas sobre o mesmo material chegaram bem escritas e discordam num valor. Qual das duas você usa?</p>
-    <button class="opt" data-k="a" data-fb="Segurança no tom é efeito do jeito como a frase é montada. A errada soa tão segura quanto a certa.">A que soou mais segura e detalhada</button>
-    <button class="opt" data-k="b" data-fb="Ferramenta nova também completa buracos com algo plausível. O ano de lançamento não confere nada.">A que veio da ferramenta mais recente</button>
-    <button class="opt" data-k="c" data-fb="Isso. Só o documento de onde o dado saiu diz qual valor vale.">A que bate com o documento de origem</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">1</span>O tom seguro não diz se está certo</h2>
+<p>A IA não consulta uma lista de verdades. Ela monta cada frase escolhendo a palavra mais provável. Quando o material existe, a palavra provável costuma ser a certa. Quando falta material, ela preenche o buraco com algo que parece certo.</p>
+<p>Por isso o dado inventado nunca vem com aviso. Ele chega na mesma frase firme, com a mesma calma do resto do texto.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de geografia pediu um parágrafo de apoio sobre um rio brasileiro. Voltou um texto limpo, com a extensão e o ano de uma cheia histórica. A extensão estava certa. O ano da cheia estava trocado.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Escreva um parágrafo de apoio para o 6º ano sobre o rio São Francisco. Até 6 linhas.</p>
+<p class="msg ia falha"><span class="quem">IA</span>O rio São Francisco tem cerca de 2.800 km e nasce na Serra da Canastra, em Minas Gerais. Em 1981, uma grande cheia atingiu várias cidades ribeirinhas…</p>
+</div>
+<p class="tela-nota ruim">A extensão confere com o livro. O ano da cheia, não. As duas frases têm exatamente o mesmo tom.</p>
+</div>
+<figcaption>Leia a resposta da IA: nada nela mostra qual frase está errada. Só o livro separa uma da outra.</figcaption>
+</figure>
+<div class="quiz" data-answer="c">
+<p class="qk">Teste-se</p>
+<p class="q">Duas respostas sobre o mesmo material chegaram bem escritas e discordam num valor. Qual das duas você usa?</p>
+<button class="opt" data-fb="Segurança no tom é efeito do jeito como a frase é montada. A errada soa tão segura quanto a certa." data-k="a">A que soou mais segura e detalhada</button>
+<button class="opt" data-fb="Ferramenta nova também completa buracos com algo plausível. O ano de lançamento não confere nada." data-k="b">A que veio da ferramenta mais recente</button>
+<button class="opt" data-fb="Isso. Só o documento de onde o dado saiu diz qual valor vale." data-k="c">A que bate com o documento de origem</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>Escreva a régua antes de mandar o pedido</h2>
-  <p>Conferir no improviso vira uma releitura cansada. A saída é anotar antes o que você vai cobrar. Isso é a <span class="gterm" data-def="três linhas que você escreve antes de pedir e usa depois para conferir a resposta: um dado que você já sabe, o que precisa bater com o documento original e o que não pode aparecer.">régua de conferência</span>.</p>
-  <p>Item um: <b>o dado que você já sabe</b> de cor. Se ele vier errado, o resto nem merece leitura. Item dois: <b>o que precisa bater</b> com o documento original, conferido um por um. Item três: <b>o que não pode aparecer</b>, como regra ou número fora do material entregue.</p>
-  <p data-ex="gestora">Uma gestora ia montar o quadro de férias da equipe. Antes de pedir, anotou três linhas. Veja a diferença na hora de conferir.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Antes</span><p><b>Conferência:</b> ler o quadro inteiro duas vezes procurando algo estranho.</p><p><b>Resultado:</b> nada saltou aos olhos e ela mandou assim mesmo. Uma data de saída estava errada.</p></div>
-      <div class="depois"><span class="rot">Depois</span><p><b>Régua:</b> "1. Meu saldo: 18 dias. 2. As datas de saída batem com a planilha. 3. Nenhuma regra fora do documento colado."</p><p><b>Resultado:</b> o item 2 pegou a data errada em menos de dois minutos.</p></div>
-      <p class="saldo"><b>Saldo:</b> de uns oito minutos de releitura insegura para dois minutos, com um ponto de parada claro.</p>
-    </div>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Nem sempre existe um dado que você sabe de cor. Nesse caso, escolha um número do próprio material e confira esse primeiro. Ele faz o papel do item um.</p></div>
+<h2><span class="n">2</span>Escreva a régua antes de mandar o pedido</h2>
+<p>Conferir no improviso vira uma releitura cansada. A saída é anotar antes o que você vai cobrar. Isso é a <span class="gterm" data-def="três linhas que você escreve antes de pedir e usa depois para conferir a resposta: um dado que você já sabe, o que precisa bater com o documento original e o que não pode aparecer.">régua de conferência</span>.</p>
+<p>Item um: <b>o dado que você já sabe</b> de cor. Se ele vier errado, o resto nem merece leitura. Item dois: <b>o que precisa bater</b> com o documento original, conferido um por um. Item três: <b>o que não pode aparecer</b>, como regra ou número fora do material entregue.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora ia montar o quadro de férias da equipe. Antes de pedir, anotou três linhas. Veja a diferença na hora de conferir.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Antes</span><p><b>Conferência:</b> ler o quadro inteiro duas vezes procurando algo estranho.</p><p><b>Resultado:</b> nada saltou aos olhos e ela mandou assim mesmo. Uma data de saída estava errada.</p></div>
+<div class="depois"><span class="rot">Depois</span><p><b>Régua:</b> "1. Meu saldo: 18 dias. 2. As datas de saída batem com a planilha. 3. Nenhuma regra fora do documento colado."</p><p><b>Resultado:</b> o item 2 pegou a data errada em menos de dois minutos.</p></div>
+<p class="saldo"><b>Saldo:</b> de uns oito minutos de releitura insegura para dois minutos, com um ponto de parada claro.</p>
+</div>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Nem sempre existe um dado que você sabe de cor. Nesse caso, escolha um número do próprio material e confira esse primeiro. Ele faz o papel do item um.</p></div>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>Mudou a ferramenta? A régua é a mesma</h2>
-  <p>A novidade aqui é a troca de ferramenta. Muda a tela, o nome e o preço. A régua que você já escreveu continua valendo, sem ajuste.</p>
-  <p data-ex="professor">Um professor de literatura trocou de ferramenta porque a antiga ficou lenta. Na primeira semana, a nova sugeriu um livro que aquela autora nunca escreveu. A mesma régua de sempre pegou o erro.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Outra ferramenta de IA</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Monte uma lista de 3 leituras da Cecília Meireles para o 8º ano, com uma frase sobre cada uma.</p>
-        <p class="msg ia falha"><span class="quem">IA</span>1. Ou isto ou aquilo — poemas curtos sobre escolhas.
+<h2><span class="n">3</span>Mudou a ferramenta? A régua é a mesma</h2>
+<p>A novidade aqui é a troca de ferramenta. Muda a tela, o nome e o preço. A régua que você já escreveu continua valendo, sem ajuste.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de literatura trocou de ferramenta porque a antiga ficou lenta. Na primeira semana, a nova sugeriu um livro que aquela autora nunca escreveu. A mesma régua de sempre pegou o erro.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Outra ferramenta de IA</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Monte uma lista de 3 leituras da Cecília Meireles para o 8º ano, com uma frase sobre cada uma.</p>
+<p class="msg ia falha"><span class="quem">IA</span>1. Ou isto ou aquilo — poemas curtos sobre escolhas.
 2. Romanceiro da Inconfidência — a história de Minas em versos.
 3. O Jardim das Águas Claras — memórias da infância no Rio…</p>
-      </div>
-      <p class="tela-nota ruim">Item 2 da régua: "os títulos batem com o catálogo da biblioteca". O terceiro não existe.</p>
-    </div>
-    <figcaption>Tela diferente, mesmo tipo de erro. A régua que pegou o erro foi escrita para a ferramenta antiga.</figcaption>
-  </figure>
+</div>
+<p class="tela-nota ruim">Item 2 da régua: "os títulos batem com o catálogo da biblioteca". O terceiro não existe.</p>
+</div>
+<figcaption>Tela diferente, mesmo tipo de erro. A régua que pegou o erro foi escrita para a ferramenta antiga.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">4</span>Conferir é tarefa. Decidir sobre alguém é seu.</h2>
-  <p>A régua cobre o que dá para checar: número, nome, data, citação. Outra parte nenhuma lista cobre, porque não é sobre exatidão. É sobre a consequência na vida de uma pessoa.</p>
-  <p>Um texto pode ter todos os dados certos e ainda propor algo que você não assinaria. Aceite o rascunho, confira os itens e guarde para você a frase que afeta alguém.</p>
-  <p data-ex="gestora">Uma gestora pediu ajuda para organizar os registros de faltas do semestre. Os números vieram certos e conferidos. O último parágrafo sugeria desligar uma pessoa. Ela apagou esse parágrafo na primeira leitura.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="bom"><span class="rot">A régua confere</span><p>"Joana: 9 faltas no semestre, 6 com atestado."</p><p>Dado checável. Bateu com a planilha, fica.</p></div>
-      <div class="neutro"><span class="rot">Fica com você</span><p>"Recomenda-se avaliar o desligamento da colaboradora."</p><p>Não é dado, é decisão. Ela apagou e vai conversar com a Joana antes.</p></div>
-    </div>
-    <figcaption>O cartão A régua confere mostra o que a IA pode entregar pronto. O cartão Fica com você traz a frase que só quem responde pela pessoa escreve.</figcaption>
-  </figure>
+<h2><span class="n">4</span>Conferir é tarefa. Decidir sobre alguém é seu.</h2>
+<p>A régua cobre o que dá para checar: número, nome, data, citação. Outra parte nenhuma lista cobre, porque não é sobre exatidão. É sobre a consequência na vida de uma pessoa.</p>
+<p>Um texto pode ter todos os dados certos e ainda propor algo que você não assinaria. Aceite o rascunho, confira os itens e guarde para você a frase que afeta alguém.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora pediu ajuda para organizar os registros de faltas do semestre. Os números vieram certos e conferidos. O último parágrafo sugeria desligar uma pessoa. Ela apagou esse parágrafo na primeira leitura.</p>
+<figure class="largo">
+<div class="lado">
+<div class="bom"><span class="rot">A régua confere</span><p>"Joana: 9 faltas no semestre, 6 com atestado."</p><p>Dado checável. Bateu com a planilha, fica.</p></div>
+<div class="neutro"><span class="rot">Fica com você</span><p>"Recomenda-se avaliar o desligamento da colaboradora."</p><p>Não é dado, é decisão. Ela apagou e vai conversar com a Joana antes.</p></div>
+</div>
+<figcaption>O cartão A régua confere mostra o que a IA pode entregar pronto. O cartão Fica com você traz a frase que só quem responde pela pessoa escreve.</figcaption>
+</figure>
 </section>
-
 <section class="practice" data-mode="analise">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Ache o dado inventado em dois textos que parecem iguais</h3>
-  <p class="pgoal">Pronto quando você comparar as suas respostas com o gabarito, item por item. Cerca de 10 minutos.</p>
-  <p class="psafe">Este caso é inventado e fica só nesta página: nada é enviado, ninguém vê o que você anotou. Se a sua resposta não bater com o gabarito, leia o comentário e volte à proposta. Errar aqui faz parte do exercício.</p>
-  <p>Sílvia coordena os serviços de apoio de uma escola e recebeu uma proposta de limpeza. Ela colou a proposta em duas ferramentas de IA e pediu um resumo de quatro linhas para a direção. Os dois textos voltaram bem escritos. Um deles traz uma condição que não existe na proposta. O valor Sílvia sabe de cor: ela mesma negociou os R$ 4.200 por telefone.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">PROPOSTA (o material de origem)
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Ache o dado inventado em dois textos que parecem iguais</h3>
+<p class="pgoal">Pronto quando você comparar as suas respostas com o gabarito, item por item. Cerca de 10 minutos.</p>
+<p class="psafe">Este caso é inventado e fica só nesta página: nada é enviado, ninguém vê o que você anotou. Se a sua resposta não bater com o gabarito, leia o comentário e volte à proposta. Errar aqui faz parte do exercício.</p>
+<p>Sílvia coordena os serviços de apoio de uma escola e recebeu uma proposta de limpeza. Ela colou a proposta em duas ferramentas de IA e pediu um resumo de quatro linhas para a direção. Os dois textos voltaram bem escritos. Um deles traz uma condição que não existe na proposta. O valor Sílvia sabe de cor: ela mesma negociou os R$ 4.200 por telefone.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">PROPOSTA (o material de origem)
 Limpeza Aurora · 3 visitas por semana · R$ 4.200 por mês
 Contrato de 12 meses · reajuste anual pelo índice de preços
 
@@ -332,40 +320,39 @@ A Limpeza Aurora oferece três visitas semanais por R$ 4.200 mensais, em contrat
 
 TEXTO B
 Proposta da Limpeza Aurora: três visitas por semana, R$ 4.200 por mês, contrato de 12 meses e reajuste anual pelo índice de preços. Não há outras condições descritas.</pre></div>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Anote no papel ou no bloco de notas do celular a régua de Sílvia em três linhas: o dado que ela já sabe, o que precisa bater e o que não pode aparecer.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>No mesmo lugar, responda: qual texto falha, qual item da régua pega a falha e o que Sílvia faz antes de levar o resumo.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Abra o gabarito abaixo e compare as suas três respostas com as do gabarito, uma a uma.</span></label></li>
-  </ol>
-  <details class="gabarito"><summary>Gabarito comentado</summary>
-    <p><b>Qual texto falha:</b> o Texto A. As duas visitas extras por trimestre não estão na proposta. Repare que ele parece o mais completo dos dois, justamente por causa da frase extra.</p>
-    <p><b>Qual item pega:</b> o terceiro, o que não pode aparecer. Os números do Texto A batem todos com a proposta, então os itens um e dois passam.</p>
-    <p><b>O que Sílvia faz:</b> usa o Texto B ou apaga a frase extra do A. Ela confirma na proposta, e não perguntando à própria IA se a condição existe.</p>
-  </details>
-  <p class="pdone">Você acabou de conferir duas respostas contra o material de origem em poucos minutos, com uma régua escrita antes.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Anote no papel ou no bloco de notas do celular a régua de Sílvia em três linhas: o dado que ela já sabe, o que precisa bater e o que não pode aparecer.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>No mesmo lugar, responda: qual texto falha, qual item da régua pega a falha e o que Sílvia faz antes de levar o resumo.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Abra o gabarito abaixo e compare as suas três respostas com as do gabarito, uma a uma.</span></label></li>
+</ol>
+<details class="gabarito"><summary>Gabarito comentado</summary>
+<p><b>Qual texto falha:</b> o Texto A. As duas visitas extras por trimestre não estão na proposta. Repare que ele parece o mais completo dos dois, justamente por causa da frase extra.</p>
+<p><b>Qual item pega:</b> o terceiro, o que não pode aparecer. Os números do Texto A batem todos com a proposta, então os itens um e dois passam.</p>
+<p><b>O que Sílvia faz:</b> usa o Texto B ou apaga a frase extra do A. Ela confirma na proposta, e não perguntando à própria IA se a condição existe.</p>
+</details>
+<p class="pdone">Você acabou de conferir duas respostas contra o material de origem em poucos minutos, com uma régua escrita antes.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Régua de conferência</h3>
-    <ol>
-      <li><span><b>O dado que você já sabe</b>veio errado? Descarte e peça de novo.</span></li>
-      <li><span><b>O que precisa bater</b>números, nomes e datas, um por um, contra o documento original.</span></li>
-      <li><span><b>O que não pode aparecer</b>nada fora do material entregue. E a decisão sobre uma pessoa fica com você.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe separar uma resposta confiável de uma resposta só bem escrita.</p>
-    <p class="na-action">Hoje, pegue a última resposta de IA que você usou sem conferir. Escreva as três linhas da régua e passe o texto por elas. Anote o que encontrou.</p>
-    <p class="na-hook">Na próxima aula: hoje você reexplica o mesmo material a cada conversa nova. Você vai juntar tudo numa pasta, uma por frente de trabalho.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Régua de conferência</h3>
+<ol>
+<li><span><b>O dado que você já sabe</b>veio errado? Descarte e peça de novo.</span></li>
+<li><span><b>O que precisa bater</b>números, nomes e datas, um por um, contra o documento original.</span></li>
+<li><span><b>O que não pode aparecer</b>nada fora do material entregue. E a decisão sobre uma pessoa fica com você.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe separar uma resposta confiável de uma resposta só bem escrita.</p>
+<p class="na-action">Hoje, pegue a última resposta de IA que você usou sem conferir. Escreva as três linhas da régua e passe o texto por elas. Anote o que encontrou.</p>
+<p class="na-hook">Na próxima aula: hoje você reexplica o mesmo material a cada conversa nova. Você vai juntar tudo numa pasta, uma por frente de trabalho.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-3">próxima aula →</a></nav>
-<p class="aula-pe">Aula 2 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 2 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-2">
+<script id="cards-2" type="application/json">
 [
   {"front":"Um texto de apoio veio com três datas e você só tem certeza de uma delas. Qual você confere primeiro, e por quê?","back":"A que você sabe de cor, porque ela é o item um da régua. Se essa sair errada, você descarta o texto e pede de novo."},
   {"front":"Você vai pedir o resumo de uma proposta e tem trinta segundos sobrando. O que escreve antes de mandar?","back":"As três linhas que vai cobrar depois: um dado que já sabe, os números para bater com o documento e a proibição de citar condição que não esteja nele."},
@@ -374,150 +361,144 @@ Proposta da Limpeza Aurora: três visitas por semana, R$ 4.200 por mês, contrat
 ]
 </script>
 </section>
-<section class="view" id="v-aula-3" data-aula="3" data-tempo="15min">
+<section class="view" data-aula="3" data-tempo="15min" id="v-aula-3">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 3 de 7</p>
-  <h1>Uma pasta por <em>frente de trabalho</em></h1>
-  <figure class="cena"><img src="assets/img/aula-3.webp" width="1280" height="720" alt="Um professor de matemática, na sala dos professores, junta numa única pasta de papel as folhas da recuperação do semestre, com o notebook aberto ao lado."></figure>
-  <p class="promise">Você tem, no seu computador, uma pasta por frente de trabalho com o material que a IA precisa ler, e sabe dizer o que nunca entra ali.</p>
-  <p class="why">Hoje o material de um assunto seu está espalhado: um pedaço no e-mail, outro na área de trabalho, outro num anexo antigo. Por isso você reexplica tudo a cada conversa nova. Não é falta de memória. É falta de um lugar único onde o assunto mora inteiro.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Uma pasta para cada frente de trabalho, não para cada tipo de arquivo.</li>
-      <li>Dentro, só o que você explicaria de boca a um colega novo.</li>
-      <li>Dado pessoal e senha nunca entram. Troque nomes por apelidos.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 3 de 7</p>
+<h1>Uma pasta por <em>frente de trabalho</em></h1>
+<figure class="cena"><img alt="Um professor de matemática, na sala dos professores, junta numa única pasta de papel as folhas da recuperação do semestre, com o notebook aberto ao lado." height="720" src="assets/img/aula-3.webp" width="1280"/></figure>
+<p class="promise">Você tem, no seu computador, uma pasta por frente de trabalho com o material que a IA precisa ler, e sabe dizer o que nunca entra ali.</p>
+<p class="why">Hoje o material de um assunto seu está espalhado: um pedaço no e-mail, outro na área de trabalho, outro num anexo antigo. Por isso você reexplica tudo a cada conversa nova. Não é falta de memória. É falta de um lugar único onde o assunto mora inteiro.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Uma pasta para cada frente de trabalho, não para cada tipo de arquivo.</li>
+<li>Dentro, só o que você explicaria de boca a um colega novo.</li>
+<li>Dado pessoal e senha nunca entram. Troque nomes por apelidos.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">1</span>Um assunto, uma pasta</h2>
-  <p>Chamo de <span class="gterm" data-def="um assunto que volta toda semana e tem vida própria: uma contratação, uma disciplina, um evento, um contrato.">frente de trabalho</span> qualquer assunto que volta na sua semana: "a turma do 7º ano", "a contratação da nova assistente". Cada frente merece uma pasta só dela, no seu computador, com o material daquele assunto reunido.</p>
-  <p>A pasta é recortada pelo assunto, e não pelo tipo de arquivo. Nada de uma pasta de planilhas e outra de textos. Ao abrir a pasta, a frente inteira está ali: o texto, o número e o combinado.</p>
-  <p>A IA não abre a pasta sozinha. Você copia o texto do arquivo e cola na conversa. Se preferir, anexe o arquivo pelo clipe ou pelo botão +.</p>
-  <p data-ex="gestora">Uma gestora cuida da contratação de um analista júnior. Cada material estava num lugar, e ela reexplicava a vaga em toda conversa nova com a IA. Veja o que mudou.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Espalhado</span><p><b>E-mail:</b> descrição da vaga.</p><p><b>Área de trabalho:</b> perguntas-entrevista.docx.</p><p><b>Anexo de março:</b> faixas-salariais.xlsx.</p></div>
-      <div class="depois"><span class="rot">Uma pasta</span><p><b>Contratação analista júnior</b></p><p>descrição-da-vaga.docx · perguntas-entrevista.docx · faixas-salariais-aprovadas.xlsx</p></div>
-      <p class="saldo"><b>Saldo:</b> em vez de reexplicar a vaga, ela cola na conversa o texto dos três arquivos da mesma pasta. Um minuto por conversa.</p>
-    </div>
-  </figure>
+<h2><span class="n">1</span>Um assunto, uma pasta</h2>
+<p>Chamo de <span class="gterm" data-def="um assunto que volta toda semana e tem vida própria: uma contratação, uma disciplina, um evento, um contrato.">frente de trabalho</span> qualquer assunto que volta na sua semana: "a turma do 7º ano", "a contratação da nova assistente". Cada frente merece uma pasta só dela, no seu computador, com o material daquele assunto reunido.</p>
+<p>A pasta é recortada pelo assunto, e não pelo tipo de arquivo. Nada de uma pasta de planilhas e outra de textos. Ao abrir a pasta, a frente inteira está ali: o texto, o número e o combinado.</p>
+<p>A IA não abre a pasta sozinha. Você copia o texto do arquivo e cola na conversa. Se preferir, anexe o arquivo pelo clipe ou pelo botão +.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora cuida da contratação de um analista júnior. Cada material estava num lugar, e ela reexplicava a vaga em toda conversa nova com a IA. Veja o que mudou.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Espalhado</span><p><b>E-mail:</b> descrição da vaga.</p><p><b>Área de trabalho:</b> perguntas-entrevista.docx.</p><p><b>Anexo de março:</b> faixas-salariais.xlsx.</p></div>
+<div class="depois"><span class="rot">Uma pasta</span><p><b>Contratação analista júnior</b></p><p>descrição-da-vaga.docx · perguntas-entrevista.docx · faixas-salariais-aprovadas.xlsx</p></div>
+<p class="saldo"><b>Saldo:</b> em vez de reexplicar a vaga, ela cola na conversa o texto dos três arquivos da mesma pasta. Um minuto por conversa.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">2</span>Dentro vai o que você explicaria de boca</h2>
-  <p>A pasta é uma pasta comum, igual a qualquer outra do seu computador. Muda só o critério de quem entra. Entra o que você teria de explicar se um colega novo assumisse a frente amanhã.</p>
-  <p>Na prática, isso dá três coisas. O material de origem. Um exemplo de resultado que você considera bom. E as regras do lugar onde aquilo vai ser usado, incluindo a decisão já tomada que ninguém deve reabrir.</p>
-  <p data-ex="professor">Um professor de matemática montou a pasta da recuperação do segundo semestre. Com ela, cada pedido de exercício novo sai no nível certo, sem ele redigitar o combinado.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
-      <div class="janela-body">
-        <div class="item pasta">Recuperação 2º semestre</div>
-        <div class="item doc dentro"><span class="pin">1</span> conteúdos-cobrados.pdf</div>
-        <div class="item doc dentro"><span class="pin">2</span> prova-antiga-corrigida.pdf</div>
-        <div class="item doc dentro"><span class="pin">3</span> orientação-da-coordenação.docx</div>
-        <div class="item pasta dentro"><span class="pin">4</span> antigo</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>O material de origem: a lista do que vai cair.</span></li>
-      <li><span class="pin">2</span><span>Um exemplo bom: uma prova que ele mesmo corrigiu, no nível da turma.</span></li>
-      <li><span class="pin">3</span><span>A regra do lugar: a nota mínima definida pela coordenação.</span></li>
-      <li><span class="pin">4</span><span>Versões velhas descem para "antigo", dentro da mesma pasta.</span></li>
-    </ol>
-  </figure>
-  <div class="qerr"><p><span class="k">Erro comum</span>Jogar tudo dentro e esperar que a IA escolha. Com vinte versões do mesmo documento, ela lê tudo com o mesmo peso e responde pela versão errada. Guarde só a que vale hoje.</p></div>
+<h2><span class="n">2</span>Dentro vai o que você explicaria de boca</h2>
+<p>A pasta é uma pasta comum, igual a qualquer outra do seu computador. Muda só o critério de quem entra. Entra o que você teria de explicar se um colega novo assumisse a frente amanhã.</p>
+<p>Na prática, isso dá três coisas. O material de origem. Um exemplo de resultado que você considera bom. E as regras do lugar onde aquilo vai ser usado, incluindo a decisão já tomada que ninguém deve reabrir.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de matemática montou a pasta da recuperação do segundo semestre. Com ela, cada pedido de exercício novo sai no nível certo, sem ele redigitar o combinado.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
+<div class="janela-body">
+<div class="item pasta">Recuperação 2º semestre</div>
+<div class="item doc dentro"><span class="pin">1</span> conteúdos-cobrados.pdf</div>
+<div class="item doc dentro"><span class="pin">2</span> prova-antiga-corrigida.pdf</div>
+<div class="item doc dentro"><span class="pin">3</span> orientação-da-coordenação.docx</div>
+<div class="item pasta dentro"><span class="pin">4</span> antigo</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>O material de origem: a lista do que vai cair.</span></li>
+<li><span class="pin">2</span><span>Um exemplo bom: uma prova que ele mesmo corrigiu, no nível da turma.</span></li>
+<li><span class="pin">3</span><span>A regra do lugar: a nota mínima definida pela coordenação.</span></li>
+<li><span class="pin">4</span><span>Versões velhas descem para "antigo", dentro da mesma pasta.</span></li>
+</ol>
+</figure>
+<div class="qerr"><p><span class="k">Erro comum</span>Jogar tudo dentro e esperar que a IA escolha. Com vinte versões do mesmo documento, ela lê tudo com o mesmo peso e responde pela versão errada. Guarde só a que vale hoje.</p></div>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">3</span>Dado pessoal e senha nunca entram</h2>
-  <p>O que está na pasta pode acabar sendo lido por um sistema fora da sua escola ou empresa. Por isso existe uma lista curta do que nunca entra. Documento de outra pessoa, endereço, dado de saúde e número de conta. E qualquer senha, inclusive as suas.</p>
-  <p>Quando o material só faz sentido com nomes, troque cada nome por um apelido: Colaborador A, Aluno B. O caso continua útil e ninguém é identificado. Leva um minuto, e o dado que já saiu não volta.</p>
-  <p data-ex="gestora">Uma gestora queria ajuda para escrever os comentários da avaliação de desempenho. A planilha original tinha nome completo, documento e salário. Ela salvou uma segunda cópia, e só essa foi para a pasta.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Original ✗</span><p>Ana Paula Ribeiro · doc. 123.456.789-00 · R$ 5.800 · "cumpre prazos, evita reuniões"</p><p>Fica só no computador dela, fora da pasta.</p></div>
-      <div class="depois"><span class="rot">Cópia para a pasta ✓</span><p>Colaboradora A · "cumpre prazos, evita reuniões"</p><p>Sem documento, sem salário. O comentário continua com o mesmo sentido.</p></div>
-    </div>
-    <figcaption>O que a IA precisa para escrever o comentário está no cartão Cópia para a pasta. O resto não ajuda e só expõe a pessoa.</figcaption>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Às vezes fica a dúvida se um dado identifica alguém. Use a regra da dúvida: se você não mostraria aquilo num mural da escola ou da empresa, troque por apelido ou deixe de fora.</p></div>
-  <details class="mais"><summary>Trabalha com dado de saúde ou de cliente (clínica, escola)?</summary><p>Tire nome e qualquer identificação e escreva "Paciente A" ou "Aluno B". Diagnóstico e dado de saúde que identifique alguém nunca entram, como diz a lista acima. E confira antes a regra da sua empresa ou escola: algumas proíbem qualquer dado real.</p></details>
-  <div class="quiz" data-answer="b">
-    <p class="qk">Teste-se</p>
-    <p class="q">Você quer ajuda para escrever o parecer de um aluno que tem laudo médico. O que vai para a pasta?</p>
-    <button class="opt" data-k="a" data-fb="O nome e o laudo identificam o aluno e expõem um dado de saúde. O parecer não precisa deles.">O parecer e o laudo, com o nome</button>
-    <button class="opt" data-k="b" data-fb="Isso. Com apelido e sem o laudo, o caso continua útil e ninguém é identificado.">O parecer com "Aluno B", sem laudo</button>
-    <button class="opt" data-k="c" data-fb="Dá para usar com cuidado: sem nome e sem dado de saúde, o caso continua útil. Confira a regra da escola.">Nada, parecer nunca passa pela IA</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">3</span>Dado pessoal e senha nunca entram</h2>
+<p>O que está na pasta pode acabar sendo lido por um sistema fora da sua escola ou empresa. Por isso existe uma lista curta do que nunca entra. Documento de outra pessoa, endereço, dado de saúde e número de conta. E qualquer senha, inclusive as suas.</p>
+<p>Quando o material só faz sentido com nomes, troque cada nome por um apelido: Colaborador A, Aluno B. O caso continua útil e ninguém é identificado. Leva um minuto, e o dado que já saiu não volta.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora queria ajuda para escrever os comentários da avaliação de desempenho. A planilha original tinha nome completo, documento e salário. Ela salvou uma segunda cópia, e só essa foi para a pasta.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Original ✗</span><p>Ana Paula Ribeiro · doc. 123.456.789-00 · R$ 5.800 · "cumpre prazos, evita reuniões"</p><p>Fica só no computador dela, fora da pasta.</p></div>
+<div class="depois"><span class="rot">Cópia para a pasta ✓</span><p>Colaboradora A · "cumpre prazos, evita reuniões"</p><p>Sem documento, sem salário. O comentário continua com o mesmo sentido.</p></div>
+</div>
+<figcaption>O que a IA precisa para escrever o comentário está no cartão Cópia para a pasta. O resto não ajuda e só expõe a pessoa.</figcaption>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Às vezes fica a dúvida se um dado identifica alguém. Use a regra da dúvida: se você não mostraria aquilo num mural da escola ou da empresa, troque por apelido ou deixe de fora.</p></div>
+<details class="mais"><summary>Trabalha com dado de saúde ou de cliente (clínica, escola)?</summary><p>Tire nome e qualquer identificação e escreva "Paciente A" ou "Aluno B". Diagnóstico e dado de saúde que identifique alguém nunca entram, como diz a lista acima. E confira antes a regra da sua empresa ou escola: algumas proíbem qualquer dado real.</p></details>
+<div class="quiz" data-answer="b">
+<p class="qk">Teste-se</p>
+<p class="q">Você quer ajuda para escrever o parecer de um aluno que tem laudo médico. O que vai para a pasta?</p>
+<button class="opt" data-fb="O nome e o laudo identificam o aluno e expõem um dado de saúde. O parecer não precisa deles." data-k="a">O parecer e o laudo, com o nome</button>
+<button class="opt" data-fb="Isso. Com apelido e sem o laudo, o caso continua útil e ninguém é identificado." data-k="b">O parecer com "Aluno B", sem laudo</button>
+<button class="opt" data-fb="Dá para usar com cuidado: sem nome e sem dado de saúde, o caso continua útil. Confira a regra da escola." data-k="c">Nada, parecer nunca passa pela IA</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">4</span>Dez minutos por mês seguram a pasta de pé</h2>
-  <p>Toda pasta viva junta entulho, porque o trabalho anda. A versão de ontem vira a errada de hoje. Sem uma limpeza curta e marcada, em dois meses a pasta volta a ser um depósito.</p>
-  <p>Marque dez minutos no fim do mês. A meta não é deixar bonito. É garantir que tudo o que está na pasta ainda é verdade.</p>
-  <p data-ex="professor">Um professor de biologia faz isso na última sexta do mês, na pasta da feira de ciências. Veja a pasta dele no meio da limpeza.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
-      <div class="janela-body">
-        <div class="item pasta">Feira de ciências</div>
-        <div class="item doc dentro"><span class="pin">1</span> regulamento-2025.pdf</div>
-        <div class="item doc dentro"><span class="pin">2</span> cronograma-final-v3-novo.docx</div>
-        <div class="item doc dentro">regulamento-2026.pdf</div>
-        <div class="item doc dentro">lista-de-grupos.xlsx</div>
-        <div class="item pasta dentro"><span class="pin">3</span> antigo</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>Isto ainda vale hoje? O regulamento do ano passado não vale.</span></li>
-      <li><span class="pin">2</span><span>Nome confuso vira assunto e mês: "cronograma setembro".</span></li>
-      <li><span class="pin">3</span><span>O que venceu desce para "antigo". Não apague, só tire da frente.</span></li>
-    </ol>
-    <figcaption>Sem número = fica como está: regulamento-2026 e lista-de-grupos. No fim, a pasta dele ficou com três arquivos na frente, todos válidos.</figcaption>
-  </figure>
+<h2><span class="n">4</span>Dez minutos por mês seguram a pasta de pé</h2>
+<p>Toda pasta viva junta entulho, porque o trabalho anda. A versão de ontem vira a errada de hoje. Sem uma limpeza curta e marcada, em dois meses a pasta volta a ser um depósito.</p>
+<p>Marque dez minutos no fim do mês. A meta não é deixar bonito. É garantir que tudo o que está na pasta ainda é verdade.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de biologia faz isso na última sexta do mês, na pasta da feira de ciências. Veja a pasta dele no meio da limpeza.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
+<div class="janela-body">
+<div class="item pasta">Feira de ciências</div>
+<div class="item doc dentro"><span class="pin">1</span> regulamento-2025.pdf</div>
+<div class="item doc dentro"><span class="pin">2</span> cronograma-final-v3-novo.docx</div>
+<div class="item doc dentro">regulamento-2026.pdf</div>
+<div class="item doc dentro">lista-de-grupos.xlsx</div>
+<div class="item pasta dentro"><span class="pin">3</span> antigo</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>Isto ainda vale hoje? O regulamento do ano passado não vale.</span></li>
+<li><span class="pin">2</span><span>Nome confuso vira assunto e mês: "cronograma setembro".</span></li>
+<li><span class="pin">3</span><span>O que venceu desce para "antigo". Não apague, só tire da frente.</span></li>
+</ol>
+<figcaption>Sem número = fica como está: regulamento-2026 e lista-de-grupos. No fim, a pasta dele ficou com três arquivos na frente, todos válidos.</figcaption>
+</figure>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/4</span></p>
-  <h3 class="ph">Monte agora a pasta de uma frente de trabalho sua</h3>
-  <p class="pgoal">Pronto quando você abrir uma única pasta e ver, sem procurar em outro lugar, os três materiais que explicam a frente. Feito no computador. No celular, crie a pasta no Google Drive ou no app Arquivos, ou faça quando voltar ao computador. Cerca de 10 minutos.</p>
-  <p class="psafe">Nada aqui é enviado para outra pessoa e nada é apagado. Mover um arquivo só muda o lugar dele. Se mudar de ideia, é só mover de volta.</p>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Escolha uma frente que você tocou nesta semana e vai tocar de novo na próxima.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>No computador: em Documentos, clique com o botão direito (no Mac, clique com dois dedos) num espaço vazio › Nova pasta. No celular: no Drive ou no app Arquivos, toque em "+" › Pasta. Dê a ela o nome dessa frente, escrito como você falaria: "contratação analista júnior", não "proj2 final".</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Mova para dentro três materiais que já existem: o de origem, um exemplo bom e a regra do lugar. No computador, arraste o arquivo até a pasta. No celular, toque nos três pontinhos do arquivo › Mover.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="4"> <span>Abra cada um e procure nome completo, documento, endereço, dado de saúde ou senha. Achou? Guarde só uma cópia com apelidos: no computador, botão direito (no Mac, dois dedos) › Duplicar; no celular, três pontinhos › Fazer uma cópia.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de reunir uma frente de trabalho inteira num lugar só, sem nada que devesse ficar só com você.</p>
+<p class="pk">Pratique agora <span class="pcount">0/4</span></p>
+<h3 class="ph">Monte agora a pasta de uma frente de trabalho sua</h3>
+<p class="pgoal">Pronto quando você abrir uma única pasta e ver, sem procurar em outro lugar, os três materiais que explicam a frente. Feito no computador. No celular, crie a pasta no Google Drive ou no app Arquivos, ou faça quando voltar ao computador. Cerca de 10 minutos.</p>
+<p class="psafe">Nada aqui é enviado para outra pessoa e nada é apagado. Mover um arquivo só muda o lugar dele. Se mudar de ideia, é só mover de volta.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Escolha uma frente que você tocou nesta semana e vai tocar de novo na próxima.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>No computador: em Documentos, clique com o botão direito (no Mac, clique com dois dedos) num espaço vazio › Nova pasta. No celular: no Drive ou no app Arquivos, toque em "+" › Pasta. Dê a ela o nome dessa frente, escrito como você falaria: "contratação analista júnior", não "proj2 final".</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Mova para dentro três materiais que já existem: o de origem, um exemplo bom e a regra do lugar. No computador, arraste o arquivo até a pasta. No celular, toque nos três pontinhos do arquivo › Mover.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Abra cada um e procure nome completo, documento, endereço, dado de saúde ou senha. Achou? Guarde só uma cópia com apelidos: no computador, botão direito (no Mac, dois dedos) › Duplicar; no celular, três pontinhos › Fazer uma cópia.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de reunir uma frente de trabalho inteira num lugar só, sem nada que devesse ficar só com você.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Pasta por frente de trabalho</h3>
-    <ol>
-      <li><span><b>Por assunto</b>uma pasta para cada frente, nunca por tipo de arquivo.</span></li>
-      <li><span><b>O que entra</b>origem, exemplo bom e regra do lugar, com a decisão já tomada.</span></li>
-      <li><span><b>O que nunca entra</b>documento, endereço, saúde, conta e senha. Use apelidos.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já tem uma frente de trabalho reunida num lugar só, com o material certo dentro.</p>
-    <p class="na-action">Hoje, marque no calendário a limpeza de dez minutos para a última sexta do mês. Se sobrar tempo, repita a pasta numa segunda frente.</p>
-    <p class="na-hook">Na próxima aula: a pasta guarda o material, mas não guarda as suas regras. Você vai escrever a ficha de orientação dessa mesma frente, uma vez só, em vez de repetir tudo a cada pedido.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Pasta por frente de trabalho</h3>
+<ol>
+<li><span><b>Por assunto</b>uma pasta para cada frente, nunca por tipo de arquivo.</span></li>
+<li><span><b>O que entra</b>origem, exemplo bom e regra do lugar, com a decisão já tomada.</span></li>
+<li><span><b>O que nunca entra</b>documento, endereço, saúde, conta e senha. Use apelidos.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já tem uma frente de trabalho reunida num lugar só, com o material certo dentro.</p>
+<p class="na-action">Hoje, marque no calendário a limpeza de dez minutos para a última sexta do mês. Se sobrar tempo, repita a pasta numa segunda frente.</p>
+<p class="na-hook">Na próxima aula: a pasta guarda o material, mas não guarda as suas regras. Você vai escrever a ficha de orientação dessa mesma frente, uma vez só, em vez de repetir tudo a cada pedido.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-4">próxima aula →</a></nav>
-<p class="aula-pe">Aula 3 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 3 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-3">
+<script id="cards-3" type="application/json">
 [
   {"front":"Você tem uma pasta de planilhas, uma de textos e uma de fotos, e mesmo assim reexplica o assunto a cada conversa. Qual é o recorte errado aqui?","back":"O recorte pelo formato do arquivo. Ele separa justo as peças que se usam juntas. Troque por um recorte por assunto: tudo da mesma contratação ou da mesma disciplina no mesmo lugar."},
   {"front":"Chegou a planilha de avaliação da equipe com nomes, documentos e salários, e você quer ajuda com os comentários. O que você faz antes de guardar?","back":"Salva uma segunda cópia com Colaborador A, B e C e sem as colunas de documento e salário. Só essa cópia vai para a pasta."},
@@ -526,126 +507,121 @@ Proposta da Limpeza Aurora: três visitas por semana, R$ 4.200 por mês, contrat
 ]
 </script>
 </section>
-<section class="view" id="v-aula-4" data-aula="4" data-tempo="15min">
+<section class="view" data-aula="4" data-tempo="15min" id="v-aula-4">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 4 de 7</p>
-  <h1>A ficha com as <em>suas regras</em></h1>
-  <figure class="cena"><img src="assets/img/aula-4.webp" width="1280" height="720" alt="Uma gestora guarda uma única folha numa pasta verde sobre a mesa: as regras daquele assunto, escritas uma vez."></figure>
-  <p class="promise">Você consegue escrever uma ficha de orientação para um assunto seu e parar de repetir as mesmas regras em cada pedido.</p>
-  <p class="why">Você repete as mesmas três ou quatro exigências em toda conversa nova. Nos dias calmos, lembra de todas. No dia corrido, esquece uma, e é justo nesse dia que o texto sai errado.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Suas regras de um assunto que volta toda semana cabem numa folha só.</li>
-      <li>Quatro perguntas bastam: <b>quem lê</b>, <b>como você escreve</b>, <b>o que nunca aparece</b> e <b>quando está pronto</b>.</li>
-      <li>A ficha leva data no topo e é revista quando o trabalho muda.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 4 de 7</p>
+<h1>A ficha com as <em>suas regras</em></h1>
+<figure class="cena"><img alt="Uma gestora guarda uma única folha numa pasta verde sobre a mesa: as regras daquele assunto, escritas uma vez." height="720" src="assets/img/aula-4.webp" width="1280"/></figure>
+<p class="promise">Você consegue escrever uma ficha de orientação para um assunto seu e parar de repetir as mesmas regras em cada pedido.</p>
+<p class="why">Você repete as mesmas três ou quatro exigências em toda conversa nova. Nos dias calmos, lembra de todas. No dia corrido, esquece uma, e é justo nesse dia que o texto sai errado.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Suas regras de um assunto que volta toda semana cabem numa folha só.</li>
+<li>Quatro perguntas bastam: <b>quem lê</b>, <b>como você escreve</b>, <b>o que nunca aparece</b> e <b>quando está pronto</b>.</li>
+<li>A ficha leva data no topo e é revista quando o trabalho muda.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">1</span>Suas regras cabem numa folha só</h2>
-  <p>Pense em quem cobre as suas férias. Você não liga todo dia: deixa uma folha com os combinados, e a pessoa consulta sozinha. A <span class="gterm" data-def="um texto curto, em português comum, com as regras que valem para tudo o que sai de uma frente de trabalho. Fica na pasta e entra junto em toda conversa nova.">ficha de orientação</span> é essa folha.</p>
-  <p>Cada ficha vale para uma <span class="gterm" data-def="um assunto que volta toda semana e tem vida própria. Cada frente ganha uma pasta e uma ficha só dela.">frente de trabalho</span>. Para o professor, pode ser "a turma do 6º ano" ou "os recados às famílias". Para a gestora, "a contratação da nova assistente".</p>
-  <p>Guarde a ficha na pasta dessa frente, a que você criou na aula 3, no seu computador, dentro de Documentos. Não fez a aula 3? No computador, abra Documentos, clique com o botão direito (no Mac, dois dedos) › Nova pasta e dê o nome do assunto. No celular, crie uma nota com o nome da frente, ou uma pasta no Drive.</p>
-  <p>Em toda conversa nova, copie o texto da ficha e cole no começo, antes do pedido. Suas regras chegam inteiras. Se o seu chat tem botão de anexar arquivo, anexar também serve.</p>
-  <p data-ex="gestora">Uma gestora de compras repetia duas exigências em toda conversa: fornecedor tratado pela razão social e prazo sempre com data. Escreveu as duas linhas uma vez e parou de digitá-las.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
-      <div class="janela-body">
-        <div class="item pasta">Compras com fornecedores</div>
-        <div class="item doc dentro"><span class="pin">1</span> ficha de orientação — compras</div>
-        <div class="item doc dentro"><span class="pin">2</span> contrato-fornecedor-2026.pdf</div>
-        <div class="item doc dentro">planilha-pedidos-setembro.xlsx</div>
-        <div class="item botao"><span class="pin">3</span> nova conversa: cole a ficha no começo</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>A ficha: só as regras. Razão social, prazo com data, assinatura do setor.</span></li>
-      <li><span class="pin">2</span><span>O material fica solto na pasta, fora da ficha. Ele muda toda semana.</span></li>
-      <li><span class="pin">3</span><span>Conversa nova? A ficha entra primeiro, o pedido vem depois.</span></li>
-    </ol>
-  </figure>
-  <div class="qerr"><p><span class="k">Erro comum</span>Colar o contrato ou a planilha dentro da ficha. Ela incha, e a regra que importava se perde. Se a frase muda toda semana, é material. Se vale para tudo o que sai dali, é regra.</p></div>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>A ficha ficou longa? Se passou de uma tela, quase sempre tem material dentro. Corte o que muda toda semana e deixe só as regras.</p></div>
+<h2><span class="n">1</span>Suas regras cabem numa folha só</h2>
+<p>Pense em quem cobre as suas férias. Você não liga todo dia: deixa uma folha com os combinados, e a pessoa consulta sozinha. A <span class="gterm" data-def="um texto curto, em português comum, com as regras que valem para tudo o que sai de uma frente de trabalho. Fica na pasta e entra junto em toda conversa nova.">ficha de orientação</span> é essa folha.</p>
+<p>Cada ficha vale para uma <span class="gterm" data-def="um assunto que volta toda semana e tem vida própria. Cada frente ganha uma pasta e uma ficha só dela.">frente de trabalho</span>. Para o professor, pode ser "a turma do 6º ano" ou "os recados às famílias". Para a gestora, "a contratação da nova assistente".</p>
+<p>Guarde a ficha na pasta dessa frente, a que você criou na aula 3, no seu computador, dentro de Documentos. Não fez a aula 3? No computador, abra Documentos, clique com o botão direito (no Mac, dois dedos) › Nova pasta e dê o nome do assunto. No celular, crie uma nota com o nome da frente, ou uma pasta no Drive.</p>
+<p>Em toda conversa nova, copie o texto da ficha e cole no começo, antes do pedido. Suas regras chegam inteiras. Se o seu chat tem botão de anexar arquivo, anexar também serve.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora de compras repetia duas exigências em toda conversa: fornecedor tratado pela razão social e prazo sempre com data. Escreveu as duas linhas uma vez e parou de digitá-las.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
+<div class="janela-body">
+<div class="item pasta">Compras com fornecedores</div>
+<div class="item doc dentro"><span class="pin">1</span> ficha de orientação — compras</div>
+<div class="item doc dentro"><span class="pin">2</span> contrato-fornecedor-2026.pdf</div>
+<div class="item doc dentro">planilha-pedidos-setembro.xlsx</div>
+<div class="item botao"><span class="pin">3</span> nova conversa: cole a ficha no começo</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>A ficha: só as regras. Razão social, prazo com data, assinatura do setor.</span></li>
+<li><span class="pin">2</span><span>O material fica solto na pasta, fora da ficha. Ele muda toda semana.</span></li>
+<li><span class="pin">3</span><span>Conversa nova? A ficha entra primeiro, o pedido vem depois.</span></li>
+</ol>
+</figure>
+<div class="qerr"><p><span class="k">Erro comum</span>Colar o contrato ou a planilha dentro da ficha. Ela incha, e a regra que importava se perde. Se a frase muda toda semana, é material. Se vale para tudo o que sai dali, é regra.</p></div>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>A ficha ficou longa? Se passou de uma tela, quase sempre tem material dentro. Corte o que muda toda semana e deixe só as regras.</p></div>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">2</span>Quatro perguntas, e a ficha está escrita</h2>
-  <p>Ficha boa não é ficha longa. Quatro perguntas cobrem quase tudo o que você hoje repete de cabeça. <b>Quem lê</b> o que sai daqui? <b>Como eu escrevo</b>? <b>O que nunca pode aparecer</b>? <b>Como eu sei que está pronto</b>?</p>
-  <p>Responda com algo que dá para conferir. "Seja claro" não serve, porque ninguém diz se foi cumprido. "Frases de até vinte palavras" serve: você conta.</p>
-  <p data-ex="professor">Um professor de ciências escreveu a ficha do recado que vai na agenda das famílias. Veja o mesmo pedido, com e sem a ficha.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
-      <div class="tela-caso" data-rotulo="Sem a ficha">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Escreva o recado da agenda sobre a feira de ciências do 6º ano: sexta-feira, 16 de outubro, no pátio, das 8h às 11h.</p>
-          <p class="msg ia falha"><span class="quem">IA</span>Queridas famílias! Nossa feira está chegando e o grupo do Pedro Henrique já está com o vulcão pronto. Contamos com a presença de todos no pátio…</p>
-        </div>
-        <p class="tela-nota ruim">Cita um aluno pelo nome e esquece a data. Não pode sair assim.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Com a ficha">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>[ficha colada no começo]
+<h2><span class="n">2</span>Quatro perguntas, e a ficha está escrita</h2>
+<p>Ficha boa não é ficha longa. Quatro perguntas cobrem quase tudo o que você hoje repete de cabeça. <b>Quem lê</b> o que sai daqui? <b>Como eu escrevo</b>? <b>O que nunca pode aparecer</b>? <b>Como eu sei que está pronto</b>?</p>
+<p>Responda com algo que dá para conferir. "Seja claro" não serve, porque ninguém diz se foi cumprido. "Frases de até vinte palavras" serve: você conta.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de ciências escreveu a ficha do recado que vai na agenda das famílias. Veja o mesmo pedido, com e sem a ficha.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
+<div class="tela-caso" data-rotulo="Sem a ficha">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Escreva o recado da agenda sobre a feira de ciências do 6º ano: sexta-feira, 16 de outubro, no pátio, das 8h às 11h.</p>
+<p class="msg ia falha"><span class="quem">IA</span>Queridas famílias! Nossa feira está chegando e o grupo do Pedro Henrique já está com o vulcão pronto. Contamos com a presença de todos no pátio…</p>
+</div>
+<p class="tela-nota ruim">Cita um aluno pelo nome e esquece a data. Não pode sair assim.</p>
+</div>
+<div class="tela-caso" data-rotulo="Com a ficha">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>[ficha colada no começo]
 QUEM LÊ: responsáveis, muitos com pouco tempo.
 COMO EU ESCREVO: frases curtas, tom cordial, sem ponto de exclamação.
 NUNCA PODE APARECER: nome de aluno, nota individual.
 PRONTO QUANDO: cabe em um parágrafo e termina com a data.
 
 Escreva o recado da agenda sobre a feira de ciências do 6º ano: sexta-feira, 16 de outubro, no pátio, das 8h às 11h.</p>
-          <p class="msg ia ok"><span class="quem">IA</span>Senhores responsáveis, a turma do 6º ano apresenta seus trabalhos na feira de ciências, no pátio, das 8h às 11h. A visita é aberta às famílias. Data: sexta-feira, 16 de outubro.</p>
-        </div>
-        <p class="tela-nota bom">Um parágrafo, sem exclamação, nenhum nome, termina com a data. O pedido foi o mesmo.</p>
-      </div>
-    </div>
-    <figcaption><b>Toque nos dois botões</b> e compare: o pedido não mudou, a ficha fez o trabalho.</figcaption>
-  </figure>
+<p class="msg ia ok"><span class="quem">IA</span>Senhores responsáveis, a turma do 6º ano apresenta seus trabalhos na feira de ciências, no pátio, das 8h às 11h. A visita é aberta às famílias. Data: sexta-feira, 16 de outubro.</p>
+</div>
+<p class="tela-nota bom">Um parágrafo, sem exclamação, nenhum nome, termina com a data. O pedido foi o mesmo.</p>
+</div>
+</div>
+<figcaption><b>Toque nos dois botões</b> e compare: o pedido não mudou, a ficha fez o trabalho.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">3</span>Regra geral e regra da frente</h2>
-  <p>Depois da segunda ficha, você percebe linhas repetidas nas duas. São suas <b>regras gerais</b>: valem para tudo o que você produz. Elas ganham uma ficha própria, guardada fora das pastas.</p>
-  <p>As <b>regras da frente</b> ficam na ficha de cada pasta e só valem ali. Quando uma contradiz a outra, vale a da frente, que está mais perto do trabalho.</p>
-  <p data-ex="professor">Um professor tem como regra geral nunca citar aluno pelo nome. Na turma da noite vale mais uma, só dali: leitura de até 20 minutos.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="neutro"><span class="rot">Regra geral</span><p><b>Onde fica:</b> numa ficha só sua, fora das pastas.</p><p><b>Professor:</b> "nunca cite aluno pelo nome".</p><p><b>Gestora:</b> "todo número vem com o documento de origem ao lado".</p></div>
-      <div class="bom"><span class="rot">Regra da frente</span><p><b>Onde fica:</b> na ficha dentro da pasta.</p><p><b>Professor, turma da noite:</b> "leitura de até 20 minutos".</p><p><b>Gestora, relatório mensal:</b> "compare com o mesmo mês do ano anterior".</p></div>
-      <p class="saldo"><b>Na dúvida:</b> vale em toda frente sua? Vai para a geral. Não vale? Fica na pasta.</p>
-    </div>
-  </figure>
+<h2><span class="n">3</span>Regra geral e regra da frente</h2>
+<p>Depois da segunda ficha, você percebe linhas repetidas nas duas. São suas <b>regras gerais</b>: valem para tudo o que você produz. Elas ganham uma ficha própria, guardada fora das pastas.</p>
+<p>As <b>regras da frente</b> ficam na ficha de cada pasta e só valem ali. Quando uma contradiz a outra, vale a da frente, que está mais perto do trabalho.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor tem como regra geral nunca citar aluno pelo nome. Na turma da noite vale mais uma, só dali: leitura de até 20 minutos.</p>
+<figure class="largo">
+<div class="lado">
+<div class="neutro"><span class="rot">Regra geral</span><p><b>Onde fica:</b> numa ficha só sua, fora das pastas.</p><p><b>Professor:</b> "nunca cite aluno pelo nome".</p><p><b>Gestora:</b> "todo número vem com o documento de origem ao lado".</p></div>
+<div class="bom"><span class="rot">Regra da frente</span><p><b>Onde fica:</b> na ficha dentro da pasta.</p><p><b>Professor, turma da noite:</b> "leitura de até 20 minutos".</p><p><b>Gestora, relatório mensal:</b> "compare com o mesmo mês do ano anterior".</p></div>
+<p class="saldo"><b>Na dúvida:</b> vale em toda frente sua? Vai para a geral. Não vale? Fica na pasta.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">4</span>A ficha envelhece: data no topo e revisão</h2>
-  <p>O trabalho muda: a equipe se reorganiza, a turma troca. A ficha continua igual e é obedecida ao pé da letra. Escreva a data da revisão na primeira linha. Quando o trabalho mudar de forma, releia linha por linha. Regra que não vale mais sai da folha.</p>
-  <p data-ex="professor">Um professor escreveu a ficha do roteiro de recuperação em março, para a turma da manhã. Em agosto assumiu a turma da noite, de alunos que trabalham. Só percebeu depois de três roteiros estranhos.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Março</span><p><b>Revisada em:</b> 10/03</p><p><b>Regra:</b> "proponha leitura para o dia seguinte".</p><p><b>Resultado em agosto:</b> roteiros que pedem leitura diária a quem chega do trabalho às 19h.</p></div>
-      <div class="depois"><span class="rot">Agosto, revisada</span><p><b>Revisada em:</b> 05/08</p><p><b>Regra:</b> "leitura de até 20 minutos, para o fim de semana".</p><p><b>Resultado:</b> o roteiro cabe na rotina da turma nova.</p></div>
-      <p class="saldo"><b>Saldo:</b> uma linha trocada acabou com três roteiros refeitos.</p>
-    </div>
-  </figure>
-  <div class="quiz" data-answer="c">
-    <p class="qk">Teste-se</p>
-    <p class="q">Três meses depois de escrever a ficha do atendimento, as respostas saem com um tratamento que a equipe abandonou. Qual é a causa mais provável?</p>
-    <button class="opt" data-k="a" data-fb="A ferramenta só segue o que recebe. Trocar de chat levaria a mesma regra velha junto.">A ferramenta piorou e precisa ser trocada</button>
-    <button class="opt" data-k="b" data-fb="Mais regras não resolvem se uma das atuais já não é verdade. O problema é idade, não tamanho.">A ficha ficou curta e precisa de mais regras</button>
-    <button class="opt" data-k="c" data-fb="A ficha segue obedecida ao pé da letra. Reler linha por linha e tirar o combinado antigo resolve em minutos.">A ficha ficou velha e segue o combinado antigo</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">4</span>A ficha envelhece: data no topo e revisão</h2>
+<p>O trabalho muda: a equipe se reorganiza, a turma troca. A ficha continua igual e é obedecida ao pé da letra. Escreva a data da revisão na primeira linha. Quando o trabalho mudar de forma, releia linha por linha. Regra que não vale mais sai da folha.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor escreveu a ficha do roteiro de recuperação em março, para a turma da manhã. Em agosto assumiu a turma da noite, de alunos que trabalham. Só percebeu depois de três roteiros estranhos.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Março</span><p><b>Revisada em:</b> 10/03</p><p><b>Regra:</b> "proponha leitura para o dia seguinte".</p><p><b>Resultado em agosto:</b> roteiros que pedem leitura diária a quem chega do trabalho às 19h.</p></div>
+<div class="depois"><span class="rot">Agosto, revisada</span><p><b>Revisada em:</b> 05/08</p><p><b>Regra:</b> "leitura de até 20 minutos, para o fim de semana".</p><p><b>Resultado:</b> o roteiro cabe na rotina da turma nova.</p></div>
+<p class="saldo"><b>Saldo:</b> uma linha trocada acabou com três roteiros refeitos.</p>
+</div>
+</figure>
+<div class="quiz" data-answer="c">
+<p class="qk">Teste-se</p>
+<p class="q">Três meses depois de escrever a ficha do atendimento, as respostas saem com um tratamento que a equipe abandonou. Qual é a causa mais provável?</p>
+<button class="opt" data-fb="A ferramenta só segue o que recebe. Trocar de chat levaria a mesma regra velha junto." data-k="a">A ferramenta piorou e precisa ser trocada</button>
+<button class="opt" data-fb="Mais regras não resolvem se uma das atuais já não é verdade. O problema é idade, não tamanho." data-k="b">A ficha ficou curta e precisa de mais regras</button>
+<button class="opt" data-fb="A ficha segue obedecida ao pé da letra. Reler linha por linha e tirar o combinado antigo resolve em minutos." data-k="c">A ficha ficou velha e segue o combinado antigo</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Escreva a ficha da pasta de uma frente sua</h3>
-  <p class="pgoal">Pronto quando a ficha responder às quatro perguntas e couber em uma tela, sem material colado dentro. No computador, cerca de 10 minutos. No celular, o app de notas também serve.</p>
-  <p class="psafe">A ficha é um texto seu, guardado com você. Nada vai para ninguém enquanto você não colar num chat. Se uma regra sair ruim, apague a linha e escreva outra.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">FICHA DE ORIENTAÇÃO — &lt;nome da frente de trabalho&gt;
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Escreva a ficha da pasta de uma frente sua</h3>
+<p class="pgoal">Pronto quando a ficha responder às quatro perguntas e couber em uma tela, sem material colado dentro. No computador, cerca de 10 minutos. No celular, o app de notas também serve.</p>
+<p class="psafe">A ficha é um texto seu, guardado com você. Nada vai para ninguém enquanto você não colar num chat. Se uma regra sair ruim, apague a linha e escreva outra.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">FICHA DE ORIENTAÇÃO — &lt;nome da frente de trabalho&gt;
 Revisada em: &lt;dia/mês/ano&gt;
 
 QUEM LÊ O QUE SAI DAQUI
@@ -659,8 +635,8 @@ O QUE NUNCA PODE APARECER
 
 COMO EU SEI QUE ESTÁ PRONTO
 &lt;ex.: cabe em um parágrafo e termina com a data do prazo&gt;</pre></div>
-  <p>Veja a mesma ficha preenchida por um professor:</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">FICHA DE ORIENTAÇÃO — recados às famílias do 6º ano
+<p>Veja a mesma ficha preenchida por um professor:</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">FICHA DE ORIENTAÇÃO — recados às famílias do 6º ano
 Revisada em: 24/09/2026
 
 QUEM LÊ O QUE SAI DAQUI
@@ -674,8 +650,8 @@ Nome de aluno, nota individual.
 
 COMO EU SEI QUE ESTÁ PRONTO
 Cabe em um parágrafo e termina com a data.</pre></div>
-  <p>E a de uma gestora, para a contratação da nova assistente:</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">FICHA DE ORIENTAÇÃO — contratação da nova assistente
+<p>E a de uma gestora, para a contratação da nova assistente:</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">FICHA DE ORIENTAÇÃO — contratação da nova assistente
 Revisada em: 22/09/2026
 
 QUEM LÊ O QUE SAI DAQUI
@@ -689,35 +665,34 @@ Salário de outra pessoa, telefone pessoal de qualquer pessoa.
 
 COMO EU SEI QUE ESTÁ PRONTO
 Cabe em um parágrafo e termina com a data do prazo.</pre></div>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>No computador, abra o Word ou o bloco de notas, cole o molde e responda às quatro perguntas com o caso real. Salve dentro da pasta da frente com o nome "ficha de orientação". No celular, faça o mesmo numa nota com o nome da frente, ou num documento do Drive dentro da pasta.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Releia cada resposta. Troque toda frase de opinião por uma que dá para conferir com sim ou não.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Cole a ficha no começo de uma conversa nova e faça um pedido pequeno dessa frente. Confira as quatro respostas, uma por uma.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de deixar suas regras escritas num lugar só, prontas para valer em todo pedido daquela frente.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>No computador, abra o Word ou o bloco de notas, cole o molde e responda às quatro perguntas com o caso real. Salve dentro da pasta da frente com o nome "ficha de orientação". No celular, faça o mesmo numa nota com o nome da frente, ou num documento do Drive dentro da pasta.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Releia cada resposta. Troque toda frase de opinião por uma que dá para conferir com sim ou não.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Cole a ficha no começo de uma conversa nova e faça um pedido pequeno dessa frente. Confira as quatro respostas, uma por uma.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de deixar suas regras escritas num lugar só, prontas para valer em todo pedido daquela frente.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Ficha de orientação</h3>
-    <ol>
-      <li><span><b>Quatro perguntas</b>quem lê, como escrevo, o que nunca aparece, quando está pronto.</span></li>
-      <li><span><b>Regra, não material</b>o que muda toda semana fica solto na pasta.</span></li>
-      <li><span><b>Data no topo</b>trabalho mudou? Releia e tire o que deixou de valer.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe deixar suas regras escritas uma vez, em vez de repetidas a cada pedido.</p>
-    <p class="na-action">Hoje, na próxima conversa dessa frente, cole a ficha no começo e conte quantas exigências deixou de digitar. Se faltou alguma, acrescente a linha.</p>
-    <p class="na-hook">Na próxima aula: a ficha vale para a frente inteira, mas falta o molde da tarefa que você repete toda semana. Você vai montar e guardar esse molde.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Ficha de orientação</h3>
+<ol>
+<li><span><b>Quatro perguntas</b>quem lê, como escrevo, o que nunca aparece, quando está pronto.</span></li>
+<li><span><b>Regra, não material</b>o que muda toda semana fica solto na pasta.</span></li>
+<li><span><b>Data no topo</b>trabalho mudou? Releia e tire o que deixou de valer.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe deixar suas regras escritas uma vez, em vez de repetidas a cada pedido.</p>
+<p class="na-action">Hoje, na próxima conversa dessa frente, cole a ficha no começo e conte quantas exigências deixou de digitar. Se faltou alguma, acrescente a linha.</p>
+<p class="na-hook">Na próxima aula: a ficha vale para a frente inteira, mas falta o molde da tarefa que você repete toda semana. Você vai montar e guardar esse molde.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-5">próxima aula →</a></nav>
-<p class="aula-pe">Aula 4 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 4 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-4">
+<script id="cards-4" type="application/json">
 [
   {"front":"Você acabou de escrever na ficha a linha \"seja objetivo\". Por que ela não se sustenta?","back":"Ninguém consegue dizer se foi cumprida. Troque por um limite que se conta, como frases de até vinte palavras."},
   {"front":"Chegou uma planilha de mil linhas e uma exigência de tom. Qual das duas entra na ficha, e por quê?","back":"Só a exigência de tom. A planilha é conteúdo daquela semana e vai solta na pasta."},
@@ -726,126 +701,121 @@ Cabe em um parágrafo e termina com a data do prazo.</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-5" data-aula="5" data-tempo="16min">
+<section class="view" data-aula="5" data-tempo="16min" id="v-aula-5">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 5 de 7</p>
-  <h1>O molde que você <em>reusa</em></h1>
-  <figure class="cena"><img src="assets/img/aula-5.webp" width="1280" height="720" alt="Um professor, numa sala de aula vazia no fim da tarde, guarda uma pilha de listas de exercícios numa pasta verde para reusar no próximo bimestre."></figure>
-  <p class="promise">Você consegue guardar um molde de pedido para a tarefa que mais se repete no seu mês e usá-lo trocando só o que muda.</p>
-  <p class="why">Toda semana você reescreve quase o mesmo pedido do zero. Numa terça calma sai bom; numa sexta corrida sai pela metade. A tarefa é a mesma. O que varia é a sua pressa na hora de pedir.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Tarefa que volta todo mês pede um <b>molde</b>, não uma reescrita.</li>
-      <li>O que vale sempre fica escrito; o que muda vira <b>lacuna com exemplo</b>.</li>
-      <li>O critério de pronto vai dentro do molde, e o molde vai na pasta.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 5 de 7</p>
+<h1>O molde que você <em>reusa</em></h1>
+<figure class="cena"><img alt="Um professor, numa sala de aula vazia no fim da tarde, guarda uma pilha de listas de exercícios numa pasta verde para reusar no próximo bimestre." height="720" src="assets/img/aula-5.webp" width="1280"/></figure>
+<p class="promise">Você consegue guardar um molde de pedido para a tarefa que mais se repete no seu mês e usá-lo trocando só o que muda.</p>
+<p class="why">Toda semana você reescreve quase o mesmo pedido do zero. Numa terça calma sai bom; numa sexta corrida sai pela metade. A tarefa é a mesma. O que varia é a sua pressa na hora de pedir.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Tarefa que volta todo mês pede um <b>molde</b>, não uma reescrita.</li>
+<li>O que vale sempre fica escrito; o que muda vira <b>lacuna com exemplo</b>.</li>
+<li>O critério de pronto vai dentro do molde, e o molde vai na pasta.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">1</span>O que você refaz todo mês já pede um molde</h2>
-  <p>Existe uma tarefa no seu mês que volta igual na forma e diferente no conteúdo. Os números mudam, as pessoas mudam, o tipo de trabalho não. Essa é a candidata a virar <span class="gterm" data-def="um pedido completo, escrito uma vez e guardado, com espaços marcados para o que muda a cada uso.">molde</span>.</p>
-  <p>O ponto de partida é o pedido em três partes da aula 1, no documento ou na conversa onde você o guardou. Pulou a aula 1 ou não guardou? Use o último pedido real dessa tarefa. A decisão de como pedir foi tomada num dia calmo e continua valendo nos dias corridos.</p>
-  <p data-ex="gestora">Toda sexta, uma gestora monta o relatório de indicadores do setor para a diretoria. Os quatro indicadores, o público e o tamanho são sempre os mesmos. Ela reescrevia esse pedido quarenta vezes por ano.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Do zero, toda sexta</span><p><b>Pedido:</b> "Faz o resumo dos indicadores da semana para a diretoria", escrito de cabeça, cada vez de um jeito.</p><p><b>Resultado:</b> numa semana vêm os quatro indicadores; na outra, falta a taxa de entrega.</p></div>
-      <div class="depois"><span class="rot">Com o molde</span><p><b>Pedido:</b> o molde aberto, com os números da semana colados na lacuna.</p><p><b>Resultado:</b> os quatro indicadores, com número e variação, toda sexta.</p></div>
-      <p class="saldo"><b>Saldo:</b> o pedido é escrito uma vez, em vez de quarenta.</p>
-    </div>
-  </figure>
-  <div class="qerr"><p><span class="k">Erro comum</span>Guardar a resposta que ficou boa, e não o pedido que a produziu. O texto bonito serve para aquele caso e mais nenhum. O que se reusa é a receita.</p></div>
+<h2><span class="n">1</span>O que você refaz todo mês já pede um molde</h2>
+<p>Existe uma tarefa no seu mês que volta igual na forma e diferente no conteúdo. Os números mudam, as pessoas mudam, o tipo de trabalho não. Essa é a candidata a virar <span class="gterm" data-def="um pedido completo, escrito uma vez e guardado, com espaços marcados para o que muda a cada uso.">molde</span>.</p>
+<p>O ponto de partida é o pedido em três partes da aula 1, no documento ou na conversa onde você o guardou. Pulou a aula 1 ou não guardou? Use o último pedido real dessa tarefa. A decisão de como pedir foi tomada num dia calmo e continua valendo nos dias corridos.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Toda sexta, uma gestora monta o relatório de indicadores do setor para a diretoria. Os quatro indicadores, o público e o tamanho são sempre os mesmos. Ela reescrevia esse pedido quarenta vezes por ano.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Do zero, toda sexta</span><p><b>Pedido:</b> "Faz o resumo dos indicadores da semana para a diretoria", escrito de cabeça, cada vez de um jeito.</p><p><b>Resultado:</b> numa semana vêm os quatro indicadores; na outra, falta a taxa de entrega.</p></div>
+<div class="depois"><span class="rot">Com o molde</span><p><b>Pedido:</b> o molde aberto, com os números da semana colados na lacuna.</p><p><b>Resultado:</b> os quatro indicadores, com número e variação, toda sexta.</p></div>
+<p class="saldo"><b>Saldo:</b> o pedido é escrito uma vez, em vez de quarenta.</p>
+</div>
+</figure>
+<div class="qerr"><p><span class="k">Erro comum</span>Guardar a resposta que ficou boa, e não o pedido que a produziu. O texto bonito serve para aquele caso e mais nenhum. O que se reusa é a receita.</p></div>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">2</span>Separe o que nunca muda do que muda a cada uso</h2>
-  <p>Montar o molde é fazer uma separação. Pegue o último pedido real dessa tarefa e pergunte, linha por linha: isto vale para todas as vezes, ou só para esta?</p>
-  <p>O que vale sempre fica escrito por extenso: seu papel, o público, o tom, o tamanho. O que vale só desta vez vira <b>lacuna</b>, com um exemplo curto ao lado. Lacuna sem exemplo abre demais, e a resposta sai diferente a cada uso.</p>
-  <p data-ex="professor">Um professor prepara a lista de exercícios de recuperação a cada bimestre. Veja o último pedido dele e o molde que saiu dali.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Último pedido real</span><p>"Monte 12 questões de frações para a recuperação do 7º ano, da mais simples à mais difícil, com gabarito comentado em duas linhas. Os alunos erraram muito soma com denominador diferente e simplificação."</p></div>
-      <div class="depois"><span class="rot">Virou molde</span><p><b>Fixo:</b> 12 questões para a recuperação do 7º ano, da mais simples à mais difícil, gabarito comentado em duas linhas.</p><p><b>Lacuna:</b> &lt;conteúdo do bimestre — ex.: frações&gt;</p><p><b>Lacuna:</b> &lt;os dois erros mais comuns na prova — ex.: simplificação&gt;</p></div>
-    </div>
-    <figcaption>A parte fixa ele escreveu uma vez. Nos próximos bimestres, troca só as duas lacunas.</figcaption>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Às vezes uma linha parece fixa e variável ao mesmo tempo. Deixe como fixa e rode o molde duas vezes. Se ela atrapalhar na segunda, vire lacuna.</p></div>
-  <div class="quiz" data-answer="b">
-    <p class="qk">Teste-se</p>
-    <p class="q">Você usou o mesmo molde duas vezes. As respostas vieram com tamanhos e tons bem diferentes. Qual a causa mais provável?</p>
-    <button class="opt" data-k="a" data-fb="Pode acontecer, mas é raro. Antes de culpar a ferramenta, olhe o que o molde deixou em aberto.">A ferramenta de IA mudou entre um uso e outro</button>
-    <button class="opt" data-k="b" data-fb="Se tom e tamanho não estão escritos na parte fixa, cada uso decide de um jeito. Escreva os dois por extenso.">Tom e tamanho ficaram vagos ou fora da parte fixa</button>
-    <button class="opt" data-k="c" data-fb="Conteúdo diferente é o esperado. A parte fixa existe justamente para segurar a forma quando o conteúdo muda.">O conteúdo colado nas duas vezes era muito diferente</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">2</span>Separe o que nunca muda do que muda a cada uso</h2>
+<p>Montar o molde é fazer uma separação. Pegue o último pedido real dessa tarefa e pergunte, linha por linha: isto vale para todas as vezes, ou só para esta?</p>
+<p>O que vale sempre fica escrito por extenso: seu papel, o público, o tom, o tamanho. O que vale só desta vez vira <b>lacuna</b>, com um exemplo curto ao lado. Lacuna sem exemplo abre demais, e a resposta sai diferente a cada uso.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor prepara a lista de exercícios de recuperação a cada bimestre. Veja o último pedido dele e o molde que saiu dali.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Último pedido real</span><p>"Monte 12 questões de frações para a recuperação do 7º ano, da mais simples à mais difícil, com gabarito comentado em duas linhas. Os alunos erraram muito soma com denominador diferente e simplificação."</p></div>
+<div class="depois"><span class="rot">Virou molde</span><p><b>Fixo:</b> 12 questões para a recuperação do 7º ano, da mais simples à mais difícil, gabarito comentado em duas linhas.</p><p><b>Lacuna:</b> &lt;conteúdo do bimestre — ex.: frações&gt;</p><p><b>Lacuna:</b> &lt;os dois erros mais comuns na prova — ex.: simplificação&gt;</p></div>
+</div>
+<figcaption>A parte fixa ele escreveu uma vez. Nos próximos bimestres, troca só as duas lacunas.</figcaption>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Às vezes uma linha parece fixa e variável ao mesmo tempo. Deixe como fixa e rode o molde duas vezes. Se ela atrapalhar na segunda, vire lacuna.</p></div>
+<div class="quiz" data-answer="b">
+<p class="qk">Teste-se</p>
+<p class="q">Você usou o mesmo molde duas vezes. As respostas vieram com tamanhos e tons bem diferentes. Qual a causa mais provável?</p>
+<button class="opt" data-fb="Pode acontecer, mas é raro. Antes de culpar a ferramenta, olhe o que o molde deixou em aberto." data-k="a">A ferramenta de IA mudou entre um uso e outro</button>
+<button class="opt" data-fb="Se tom e tamanho não estão escritos na parte fixa, cada uso decide de um jeito. Escreva os dois por extenso." data-k="b">Tom e tamanho ficaram vagos ou fora da parte fixa</button>
+<button class="opt" data-fb="Conteúdo diferente é o esperado. A parte fixa existe justamente para segurar a forma quando o conteúdo muda." data-k="c">O conteúdo colado nas duas vezes era muito diferente</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">3</span>O critério de pronto mora dentro do molde</h2>
-  <p>Um molde só com material e formato economiza digitação, mas não conferência. O que mais cansa é decidir, toda vez, se o resultado serve.</p>
-  <p>Escreva essa decisão uma vez, dentro do molde, em duas linhas: o que a resposta precisa ter e o que ela nunca pode fazer. Assim, conferir vira contagem.</p>
-  <p data-ex="gestora">Uma gestora de clínica responde às reclamações de pacientes que chegam pelo site. Veja a mesma reclamação com o molde antigo e com o molde novo.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
-      <div class="tela-caso" data-rotulo="Sem critério">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Responda esta reclamação com tom cordial, em até 6 linhas.
+<h2><span class="n">3</span>O critério de pronto mora dentro do molde</h2>
+<p>Um molde só com material e formato economiza digitação, mas não conferência. O que mais cansa é decidir, toda vez, se o resultado serve.</p>
+<p>Escreva essa decisão uma vez, dentro do molde, em duas linhas: o que a resposta precisa ter e o que ela nunca pode fazer. Assim, conferir vira contagem.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora de clínica responde às reclamações de pacientes que chegam pelo site. Veja a mesma reclamação com o molde antigo e com o molde novo.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
+<div class="tela-caso" data-rotulo="Sem critério">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responda esta reclamação com tom cordial, em até 6 linhas.
 [reclamação: "remarcaram minha consulta duas vezes e ninguém me avisou"]
 [nova data: terça-feira, 20 de outubro, às 14h]</p>
-          <p class="msg ia falha"><span class="quem">IA</span>Lamentamos muito o transtorno! Vamos oferecer um desconto na próxima consulta e resolver tudo o quanto antes…</p>
-        </div>
-        <p class="tela-nota ruim">Prometeu desconto e esqueceu a nova data. Ela teria de reescrever.</p>
-      </div>
-      <div class="tela-caso" data-rotulo="Com critério">
-        <div class="tela-body">
-          <p class="msg eu"><span class="quem">Você</span>Responda esta reclamação com tom cordial, em até 6 linhas.
+<p class="msg ia falha"><span class="quem">IA</span>Lamentamos muito o transtorno! Vamos oferecer um desconto na próxima consulta e resolver tudo o quanto antes…</p>
+</div>
+<p class="tela-nota ruim">Prometeu desconto e esqueceu a nova data. Ela teria de reescrever.</p>
+</div>
+<div class="tela-caso" data-rotulo="Com critério">
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Responda esta reclamação com tom cordial, em até 6 linhas.
 PRECISA TER: o problema com as palavras do paciente, a nova data, assinatura do setor (Equipe de Atendimento).
 NUNCA PODE: prometer desconto.
 [reclamação: "remarcaram minha consulta duas vezes e ninguém me avisou"]
 [nova data: terça-feira, 20 de outubro, às 14h]</p>
-          <p class="msg ia ok"><span class="quem">IA</span>Entendemos: sua consulta foi remarcada duas vezes e ninguém avisou você. Sua nova consulta fica para terça-feira, 20 de outubro, às 14h.
+<p class="msg ia ok"><span class="quem">IA</span>Entendemos: sua consulta foi remarcada duas vezes e ninguém avisou você. Sua nova consulta fica para terça-feira, 20 de outubro, às 14h.
 Equipe de Atendimento</p>
-        </div>
-        <p class="tela-nota bom">Três itens presentes, nenhuma promessa proibida. Conferiu em vinte segundos.</p>
-      </div>
-    </div>
-    <figcaption><b>Toque nos dois botões</b>: as duas linhas de critério mudaram a resposta e a conferência.</figcaption>
-  </figure>
+</div>
+<p class="tela-nota bom">Três itens presentes, nenhuma promessa proibida. Conferiu em vinte segundos.</p>
+</div>
+</div>
+<figcaption><b>Toque nos dois botões</b>: as duas linhas de critério mudaram a resposta e a conferência.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="ferramenta">
-  <h2><span class="n">4</span>Guarde onde a sua mão acha na sexta-feira</h2>
-  <p>Um molde que você não acha em dez segundos é um molde que você não usa. Guarde-o na pasta da sua <span class="gterm" data-def="um assunto que volta toda semana e tem vida própria. Para o professor, a turma do 6º ano; para a gestora, a contratação da nova assistente.">frente de trabalho</span>, ao lado da ficha de orientação.</p>
-  <p>Essa pasta você criou na aula 3, no seu computador, dentro de Documentos. Pulou as aulas 3 e 4? Abra Documentos, clique com o botão direito › Nova pasta, e dê o nome do assunto.</p>
-  <p>Dê ao molde o nome da tarefa, não do conteúdo. "Molde — carta de recomendação" se acha. "Texto bom versão 3" some.</p>
-  <p data-ex="professor">Um professor escreve cartas de recomendação para ex-alunos ao longo do ano. Quando chega um pedido em novembro, ele abre o molde, troca o nome e o período, e entrega no mesmo dia.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
-      <div class="janela-body">
-        <div class="item pasta"><span class="pin">1</span> Escola — documentos para ex-alunos</div>
-        <div class="item doc dentro"><span class="pin">2</span> ficha de orientação — ex-alunos</div>
-        <div class="item doc dentro"><span class="pin">3</span> molde — carta de recomendação</div>
-        <div class="item doc dentro">carta-ana-março.docx</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>A pasta da frente de trabalho, a mesma da aula 3.</span></li>
-      <li><span class="pin">2</span><span>A ficha, com as regras que valem para tudo o que sai dali.</span></li>
-      <li><span class="pin">3</span><span>O molde, com o nome da tarefa. Achado em segundos.</span></li>
-    </ol>
-  </figure>
+<h2><span class="n">4</span>Guarde onde a sua mão acha na sexta-feira</h2>
+<p>Um molde que você não acha em dez segundos é um molde que você não usa. Guarde-o na pasta da sua <span class="gterm" data-def="um assunto que volta toda semana e tem vida própria. Para o professor, a turma do 6º ano; para a gestora, a contratação da nova assistente.">frente de trabalho</span>, ao lado da ficha de orientação.</p>
+<p>Essa pasta você criou na aula 3, no seu computador, dentro de Documentos. Pulou as aulas 3 e 4? Abra Documentos, clique com o botão direito › Nova pasta, e dê o nome do assunto.</p>
+<p>Dê ao molde o nome da tarefa, não do conteúdo. "Molde — carta de recomendação" se acha. "Texto bom versão 3" some.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor escreve cartas de recomendação para ex-alunos ao longo do ano. Quando chega um pedido em novembro, ele abre o molde, troca o nome e o período, e entrega no mesmo dia.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Meus arquivos</span></div>
+<div class="janela-body">
+<div class="item pasta"><span class="pin">1</span> Escola — documentos para ex-alunos</div>
+<div class="item doc dentro"><span class="pin">2</span> ficha de orientação — ex-alunos</div>
+<div class="item doc dentro"><span class="pin">3</span> molde — carta de recomendação</div>
+<div class="item doc dentro">carta-ana-março.docx</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>A pasta da frente de trabalho, a mesma da aula 3.</span></li>
+<li><span class="pin">2</span><span>A ficha, com as regras que valem para tudo o que sai dali.</span></li>
+<li><span class="pin">3</span><span>O molde, com o nome da tarefa. Achado em segundos.</span></li>
+</ol>
+</figure>
 </section>
-
 <section class="practice" data-mode="prompt">
-  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
-  <h3 class="ph">Monte o seu molde e rode duas vezes</h3>
-  <p class="pgoal">Pronto quando o mesmo molde, com dois conteúdos diferentes, devolver duas respostas do mesmo tamanho e do mesmo tom. Cerca de 12 minutos, no computador ou no celular.</p>
-  <p class="psafe">Nada aqui vai para ninguém além da sua própria conversa. O molde é um texto seu. Se a primeira rodada vier torta, mude uma linha e rode de novo.</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">MOLDE — &lt;nome da tarefa que se repete&gt;
+<p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+<h3 class="ph">Monte o seu molde e rode duas vezes</h3>
+<p class="pgoal">Pronto quando o mesmo molde, com dois conteúdos diferentes, devolver duas respostas do mesmo tamanho e do mesmo tom. Cerca de 12 minutos, no computador ou no celular.</p>
+<p class="psafe">Nada aqui vai para ninguém além da sua própria conversa. O molde é um texto seu. Se a primeira rodada vier torta, mude uma linha e rode de novo.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">MOLDE — &lt;nome da tarefa que se repete&gt;
 
 FIXO (vale para todas as vezes)
 Meu papel: &lt;ex.: coordenação de um setor de oito pessoas&gt;
@@ -859,8 +829,8 @@ Período desta vez: &lt;ex.: semana de 5 a 9 de outubro&gt;
 CRITÉRIO DE PRONTO (vale para todas as vezes)
 Só está pronto se: &lt;ex.: trouxer os 4 indicadores com número e variação&gt;
 Nunca pode: &lt;ex.: usar número que não esteja no material colado&gt;</pre></div>
-  <p>Veja o mesmo molde preenchido pelo professor da recuperação:</p>
-  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">MOLDE — lista de recuperação do bimestre
+<p>Veja o mesmo molde preenchido pelo professor da recuperação:</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">MOLDE — lista de recuperação do bimestre
 
 FIXO (vale para todas as vezes)
 Meu papel: professor de matemática do 7º ano
@@ -874,35 +844,34 @@ Os dois erros mais comuns na prova: &lt;ex.: simplificação&gt;
 CRITÉRIO DE PRONTO (vale para todas as vezes)
 Só está pronto se: tiver 12 questões e gabarito comentado em duas linhas
 Nunca pode: usar conteúdo fora do bimestre</pre></div>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Abra o pedido que você guardou na aula 1, ou o último pedido real da sua tarefa mais repetida. Preencha o FIXO e o CRITÉRIO DE PRONTO.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Preencha as lacunas com o conteúdo desta semana, mande e confira a resposta contando os itens do critério.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Rode de novo trocando só as lacunas. Se o tamanho ou o tom mudarem, aperte a parte fixa. Salve o molde no Word ou no bloco de notas, dentro da pasta, com o nome da tarefa.</span></label></li>
-  </ol>
-  <p class="pdone">Você acabou de guardar um molde que devolve o mesmo padrão de resposta em qualquer dia da semana.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Abra o pedido que você guardou na aula 1, ou o último pedido real da sua tarefa mais repetida. Preencha o FIXO e o CRITÉRIO DE PRONTO.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Preencha as lacunas com o conteúdo desta semana, mande e confira a resposta contando os itens do critério.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Rode de novo trocando só as lacunas. Se o tamanho ou o tom mudarem, aperte a parte fixa. Salve o molde no Word ou no bloco de notas, dentro da pasta, com o nome da tarefa.</span></label></li>
+</ol>
+<p class="pdone">Você acabou de guardar um molde que devolve o mesmo padrão de resposta em qualquer dia da semana.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Molde de pedido</h3>
-    <ol>
-      <li><span><b>Fixo e lacuna</b>o que vale sempre fica escrito; o que muda leva exemplo ao lado.</span></li>
-      <li><span><b>Duas linhas de critério</b>o que precisa ter e o que nunca pode.</span></li>
-      <li><span><b>Nome da tarefa</b>na pasta, ao lado da ficha. Achou em dez segundos, usa.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe guardar o pedido da sua tarefa mais repetida, pronto para reusar trocando só o que muda.</p>
-    <p class="na-action">Na próxima vez que essa tarefa aparecer, use o molde. Depois anote ao lado dele a única linha que você teve vontade de corrigir.</p>
-    <p class="na-hook">Na próxima aula: você mexe no molde para melhorar, o resultado piora, e a versão boa já foi salva por cima. Você vai criar um ponto de retorno.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Molde de pedido</h3>
+<ol>
+<li><span><b>Fixo e lacuna</b>o que vale sempre fica escrito; o que muda leva exemplo ao lado.</span></li>
+<li><span><b>Duas linhas de critério</b>o que precisa ter e o que nunca pode.</span></li>
+<li><span><b>Nome da tarefa</b>na pasta, ao lado da ficha. Achou em dez segundos, usa.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe guardar o pedido da sua tarefa mais repetida, pronto para reusar trocando só o que muda.</p>
+<p class="na-action">Na próxima vez que essa tarefa aparecer, use o molde. Depois anote ao lado dele a única linha que você teve vontade de corrigir.</p>
+<p class="na-hook">Na próxima aula: você mexe no molde para melhorar, o resultado piora, e a versão boa já foi salva por cima. Você vai criar um ponto de retorno.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-6">próxima aula →</a></nav>
-<p class="aula-pe">Aula 5 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 5 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-5">
+<script id="cards-5" type="application/json">
 [
   {"front":"Sexta-feira, no aperto, você não acha o seu molde dentro da pasta. Olhando o nome que deu ao texto, qual foi o erro?","back":"O nome descreve o conteúdo daquele dia, e não a tarefa. Batizado pela tarefa, ele aparece na primeira olhada."},
   {"front":"Uma tarefa volta duas vezes por ano e outra volta quatro vezes por mês. Qual vira molde primeiro?","back":"A de quatro vezes por mês. Montar o molde se paga pela frequência."},
@@ -911,148 +880,142 @@ Nunca pode: usar conteúdo fora do bimestre</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-6" data-aula="6" data-tempo="14min">
+<section class="view" data-aula="6" data-tempo="14min" id="v-aula-6">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 6 de 7</p>
-  <h1>Não perder o que <em>já funcionava</em></h1>
-  <figure class="cena"><img src="assets/img/aula-6.webp" width="1280" height="720" alt="Um professor compara no notebook duas versões do mesmo documento, lado a lado, com um caderno aberto ao lado para anotar o motivo da mudança."></figure>
-  <p class="promise">Você consegue mudar um material de trabalho sabendo que dá para voltar exatamente à versão anterior, sem depender da memória.</p>
-  <p class="why">Você mexe numa regra da sua ficha para melhorar um detalhe. Na semana seguinte, o resultado sai pior. Quando tenta desfazer, a versão boa já foi salva por cima. Não foi descuido: faltou um ponto de retorno.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>Antes de mexer num material que funciona, duplique o arquivo com a data de hoje no nome.</li>
-      <li>No caderno de mudanças, escreva uma linha com o <b>porquê</b>. O quê, os arquivos já mostram.</li>
-      <li>Quando algo sair errado, anote a falha no mesmo dia, em uma linha do mesmo caderno.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 6 de 7</p>
+<h1>Não perder o que <em>já funcionava</em></h1>
+<figure class="cena"><img alt="Um professor compara no notebook duas versões do mesmo documento, lado a lado, com um caderno aberto ao lado para anotar o motivo da mudança." height="720" src="assets/img/aula-6.webp" width="1280"/></figure>
+<p class="promise">Você consegue mudar um material de trabalho sabendo que dá para voltar exatamente à versão anterior, sem depender da memória.</p>
+<p class="why">Você mexe numa regra da sua ficha para melhorar um detalhe. Na semana seguinte, o resultado sai pior. Quando tenta desfazer, a versão boa já foi salva por cima. Não foi descuido: faltou um ponto de retorno.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>Antes de mexer num material que funciona, duplique o arquivo com a data de hoje no nome.</li>
+<li>No caderno de mudanças, escreva uma linha com o <b>porquê</b>. O quê, os arquivos já mostram.</li>
+<li>Quando algo sair errado, anote a falha no mesmo dia, em uma linha do mesmo caderno.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">1</span>Toda melhora é uma aposta</h2>
-  <p>Mudar uma regra de um material que já entrega resultado é apostar que o novo será melhor. Às vezes é. Outras vezes, a mudança resolve o detalhe que incomodava e estraga algo que funcionava calado. Você só descobre no uso seguinte, dias depois.</p>
-  <p>Apostar é como o material melhora. O problema é apostar sem ponto de retorno. Aí uma aposta ruim custa a reconstrução inteira do que você já tinha.</p>
-  <p data-ex="gestora">Uma gestora ajustou a regra de folga na planilha de escala do plantão para cobrir um feriado. A escala do feriado saiu certa. Duas semanas depois, a mesma regra deixou dois sábados seguidos sem ninguém. E a versão antiga já tinha sido salva por cima.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Antes</span><p><b>Gesto:</b> abrir a planilha, mudar a regra, salvar.</p><p><b>Resultado:</b> a versão que funcionava deixou de existir no mesmo instante. Ela refez a escala de memória em meia tarde.</p></div>
-      <div class="depois"><span class="rot">Depois</span><p><b>Gesto:</b> duplicar a planilha com a data de hoje no nome, mudar a regra no original, salvar.</p><p><b>Resultado:</b> as duas versões existem. Se a regra nova falhar, a antiga está a um clique.</p></div>
-      <p class="saldo"><b>Saldo:</b> quinze segundos a mais por mudança, no lugar de meia tarde refazendo do zero.</p>
-    </div>
-  </figure>
+<h2><span class="n">1</span>Toda melhora é uma aposta</h2>
+<p>Mudar uma regra de um material que já entrega resultado é apostar que o novo será melhor. Às vezes é. Outras vezes, a mudança resolve o detalhe que incomodava e estraga algo que funcionava calado. Você só descobre no uso seguinte, dias depois.</p>
+<p>Apostar é como o material melhora. O problema é apostar sem ponto de retorno. Aí uma aposta ruim custa a reconstrução inteira do que você já tinha.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora ajustou a regra de folga na planilha de escala do plantão para cobrir um feriado. A escala do feriado saiu certa. Duas semanas depois, a mesma regra deixou dois sábados seguidos sem ninguém. E a versão antiga já tinha sido salva por cima.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Antes</span><p><b>Gesto:</b> abrir a planilha, mudar a regra, salvar.</p><p><b>Resultado:</b> a versão que funcionava deixou de existir no mesmo instante. Ela refez a escala de memória em meia tarde.</p></div>
+<div class="depois"><span class="rot">Depois</span><p><b>Gesto:</b> duplicar a planilha com a data de hoje no nome, mudar a regra no original, salvar.</p><p><b>Resultado:</b> as duas versões existem. Se a regra nova falhar, a antiga está a um clique.</p></div>
+<p class="saldo"><b>Saldo:</b> quinze segundos a mais por mudança, no lugar de meia tarde refazendo do zero.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">2</span>A cópia datada, feita antes de mexer</h2>
-  <p>O ponto de retorno cabe em um gesto. Antes de alterar, duplique o arquivo e coloque a data de hoje no começo do nome da cópia. Isso é a <span class="gterm" data-def="uma duplicata do arquivo, feita antes de qualquer mudança, com a data do dia no começo do nome. Ela fica congelada na versão que funcionava.">cópia datada</span>. Você fica com dois arquivos na mesma pasta: o que vai mexer e o que ficou congelado no estado bom.</p>
-  <p>O gesto: clique com o botão direito no arquivo › Copiar. Clique com o botão direito num espaço vazio da mesma pasta › Colar. Aparece a cópia. Clique com o botão direito nela › Renomear, e ponha a data de hoje no começo do nome.</p>
-  <p>No papel, você escreve 24/09/2026. No nome do arquivo, escreva 2026-09-24: ano, mês e dia, com traço. A barra nem é aceita em nome de arquivo. E, começando pelo ano, o computador põe as cópias na ordem do calendário.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Dia, mês, ano</span><p>03-09-2026 ficha<br>14-08-2026 ficha<br>22-09-2026 ficha</p><p>O computador ordena pelo primeiro número. O 3 de setembro aparece antes de agosto.</p></div>
-      <div class="depois"><span class="rot">Ano, mês, dia</span><p>2026-08-14 ficha<br>2026-09-03 ficha<br>2026-09-22 ficha</p><p>A mesma ordem do calendário, da mais antiga para a mais recente.</p></div>
-    </div>
-  </figure>
-  <p data-ex="professor">Um professor de matemática ia afrouxar a nota mínima da ficha das provas de recuperação. Antes, fez a cópia datada. O critério novo ficou brando demais. Ele abriu a cópia, leu a regra antiga e recolocou a frase exata em menos de um minuto.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Recuperação de matemática</span></div>
-      <div class="janela-body">
-        <div class="item pasta">Recuperação de matemática</div>
-        <div class="item doc dentro"><span class="pin">1</span> 2026-08-14 ficha recuperação</div>
-        <div class="item doc dentro"><span class="pin">2</span> 2026-09-22 ficha recuperação</div>
-        <div class="item doc dentro"><span class="pin">3</span> ficha recuperação</div>
-        <div class="item doc dentro">molde da prova</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>A cópia de agosto: a regra como estava no começo do semestre.</span></li>
-      <li><span class="pin">2</span><span>A cópia de hoje, feita segundos antes de mexer na nota mínima.</span></li>
-      <li><span class="pin">3</span><span>O arquivo sem data é o que está em uso. É só nele que você mexe.</span></li>
-    </ol>
-    <figcaption>A data no começo do nome põe as versões em fila, sem você organizar nada.</figcaption>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>No Mac, o atalho é botão direito no arquivo › Duplicar. No Google Drive, botão direito › Fazer uma cópia. A cópia nasce com "cópia" ou "(1)" no nome. Tudo bem: botão direito nela › Renomear, e troque pelo nome com a data.</p></div>
+<h2><span class="n">2</span>A cópia datada, feita antes de mexer</h2>
+<p>O ponto de retorno cabe em um gesto. Antes de alterar, duplique o arquivo e coloque a data de hoje no começo do nome da cópia. Isso é a <span class="gterm" data-def="uma duplicata do arquivo, feita antes de qualquer mudança, com a data do dia no começo do nome. Ela fica congelada na versão que funcionava.">cópia datada</span>. Você fica com dois arquivos na mesma pasta: o que vai mexer e o que ficou congelado no estado bom.</p>
+<p>O gesto: clique com o botão direito no arquivo › Copiar. Clique com o botão direito num espaço vazio da mesma pasta › Colar. Aparece a cópia. Clique com o botão direito nela › Renomear, e ponha a data de hoje no começo do nome.</p>
+<p>No papel, você escreve 24/09/2026. No nome do arquivo, escreva 2026-09-24: ano, mês e dia, com traço. A barra nem é aceita em nome de arquivo. E, começando pelo ano, o computador põe as cópias na ordem do calendário.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Dia, mês, ano</span><p>03-09-2026 ficha<br/>14-08-2026 ficha<br/>22-09-2026 ficha</p><p>O computador ordena pelo primeiro número. O 3 de setembro aparece antes de agosto.</p></div>
+<div class="depois"><span class="rot">Ano, mês, dia</span><p>2026-08-14 ficha<br/>2026-09-03 ficha<br/>2026-09-22 ficha</p><p>A mesma ordem do calendário, da mais antiga para a mais recente.</p></div>
+</div>
+</figure>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de matemática ia afrouxar a nota mínima da ficha das provas de recuperação. Antes, fez a cópia datada. O critério novo ficou brando demais. Ele abriu a cópia, leu a regra antiga e recolocou a frase exata em menos de um minuto.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Recuperação de matemática</span></div>
+<div class="janela-body">
+<div class="item pasta">Recuperação de matemática</div>
+<div class="item doc dentro"><span class="pin">1</span> 2026-08-14 ficha recuperação</div>
+<div class="item doc dentro"><span class="pin">2</span> 2026-09-22 ficha recuperação</div>
+<div class="item doc dentro"><span class="pin">3</span> ficha recuperação</div>
+<div class="item doc dentro">molde da prova</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>A cópia de agosto: a regra como estava no começo do semestre.</span></li>
+<li><span class="pin">2</span><span>A cópia de hoje, feita segundos antes de mexer na nota mínima.</span></li>
+<li><span class="pin">3</span><span>O arquivo sem data é o que está em uso. É só nele que você mexe.</span></li>
+</ol>
+<figcaption>A data no começo do nome põe as versões em fila, sem você organizar nada.</figcaption>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>No Mac, o atalho é botão direito no arquivo › Duplicar. No Google Drive, botão direito › Fazer uma cópia. A cópia nasce com "cópia" ou "(1)" no nome. Tudo bem: botão direito nela › Renomear, e troque pelo nome com a data.</p></div>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">3</span>Anote o porquê, não o quê</h2>
-  <p>A cópia resolve metade. A outra metade é saber por que você mudou. Com os dois arquivos abertos lado a lado, você enxerga qual frase entrou e qual saiu. O motivo, nenhum dos dois guarda.</p>
-  <p>O registro é curto: a data e a razão, em uma linha, sempre no mesmo lugar. Esse lugar é o <span class="gterm" data-def="o lugar único onde você escreve, em uma linha, a data e o motivo de cada mudança e de cada falha. Ex.: o professor usa um caderno de papel na mochila; a gestora usa uma nota no celular.">caderno de mudanças</span>. Pode ser de papel ou uma nota no celular. Se levar mais de quinze segundos, você abandona na segunda semana.</p>
-  <p data-ex="gestora">Uma gestora de clínica tirou o telefone do médico do aviso aos pacientes. Meses depois, alguém quis recolocar. A linha dela respondeu na hora.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Anotou o quê</span><p>"Tirei o telefone do médico do aviso."</p><p>Isso os dois arquivos já mostram. Meses depois, ninguém sabe se foi bom.</p></div>
-      <div class="depois"><span class="rot">Anotou o porquê</span><p>"Tirei o telefone do médico porque pacientes ligavam de madrugada."</p><p>A decisão se defende sozinha e não é desfeita por acaso.</p></div>
-    </div>
-    <figcaption>O arquivo mostra o que mudou. Só você guarda o porquê.</figcaption>
-  </figure>
+<h2><span class="n">3</span>Anote o porquê, não o quê</h2>
+<p>A cópia resolve metade. A outra metade é saber por que você mudou. Com os dois arquivos abertos lado a lado, você enxerga qual frase entrou e qual saiu. O motivo, nenhum dos dois guarda.</p>
+<p>O registro é curto: a data e a razão, em uma linha, sempre no mesmo lugar. Esse lugar é o <span class="gterm" data-def="o lugar único onde você escreve, em uma linha, a data e o motivo de cada mudança e de cada falha. Ex.: o professor usa um caderno de papel na mochila; a gestora usa uma nota no celular.">caderno de mudanças</span>. Pode ser de papel ou uma nota no celular. Se levar mais de quinze segundos, você abandona na segunda semana.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora de clínica tirou o telefone do médico do aviso aos pacientes. Meses depois, alguém quis recolocar. A linha dela respondeu na hora.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Anotou o quê</span><p>"Tirei o telefone do médico do aviso."</p><p>Isso os dois arquivos já mostram. Meses depois, ninguém sabe se foi bom.</p></div>
+<div class="depois"><span class="rot">Anotou o porquê</span><p>"Tirei o telefone do médico porque pacientes ligavam de madrugada."</p><p>A decisão se defende sozinha e não é desfeita por acaso.</p></div>
+</div>
+<figcaption>O arquivo mostra o que mudou. Só você guarda o porquê.</figcaption>
+</figure>
 </section>
-
 <section class="step" data-kind="fundamento">
-  <h2><span class="n">4</span>Uma linha por falha, no mesmo dia</h2>
-  <p>O caderno de mudanças recebe outro tipo de linha: as falhas. Quando um resultado sai errado e você conserta, escreva a data, o que quebrou e o menor conserto que resolveu. Escreva no dia, porque no fim do mês o conserto já foi esquecido.</p>
-  <p>Uma linha solta parece inútil. Três linhas com a mesma falha mostram a repetição: o mesmo erro voltando por caminhos diferentes. Aí você para de remendar o resultado e corrige a regra que produz o erro.</p>
-  <p data-ex="professor">Um professor de ciências anotou por um mês as falhas do roteiro de laboratório feito com IA. Três linhas diziam a mesma coisa. Ele parou de acrescentar o aviso à mão e escreveu a exigência na ficha, uma vez.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Caderno de mudanças · Laboratório</span></div>
-      <div class="janela-body">
-        <div class="item doc"><span class="pin">1</span><span>02/09 · faltou o aviso do material aquecido · acrescentei à mão</span></div>
-        <div class="item doc"><span>05/09 · lista de materiais longa demais · pedi até 8 itens</span></div>
-        <div class="item doc"><span class="pin">2</span><span>12/09 · roteiro sem aviso de segurança · acrescentei à mão</span></div>
-        <div class="item doc"><span class="pin">3</span><span>19/09 · faltou o aviso da lamparina · acrescentei à mão</span></div>
-        <div class="item"><span><b>Conserto na regra:</b> 19/09 · mudei a ficha: "todo roteiro abre com o aviso de segurança", porque faltou 3 vezes</span></div>
-      </div>
-    </div>
-    <figcaption>Os números 1, 2 e 3 foram marcados depois, ao reler o caderno. Essas três linhas contam o mesmo erro com palavras diferentes: faltou o aviso de segurança. Na terceira vez, o conserto saiu do roteiro e foi para a ficha.</figcaption>
-  </figure>
-  <div class="quiz" data-answer="c">
-    <p class="qk">Teste-se</p>
-    <p class="q">Você mudou uma regra da ficha há duas semanas e o resultado piorou. A cópia datada existe, mas você não anotou nada. O que você perdeu?</p>
-    <button class="opt" data-k="a" data-fb="Não: a cópia datada guarda o texto anterior inteiro.">A versão anterior, que vai ter de reescrever</button>
-    <button class="opt" data-k="b" data-fb="A cópia devolve o texto, mas não diz que problema a mudança tentava resolver.">Nada, a cópia resolve tudo sozinha</button>
-    <button class="opt" data-k="c" data-fb="Isso. Você consegue voltar, mas sem saber que problema a regra nova resolvia. Pode desfazer uma boa decisão junto.">O motivo da mudança</button>
-    <p class="qfb" aria-live="polite"></p>
-  </div>
+<h2><span class="n">4</span>Uma linha por falha, no mesmo dia</h2>
+<p>O caderno de mudanças recebe outro tipo de linha: as falhas. Quando um resultado sai errado e você conserta, escreva a data, o que quebrou e o menor conserto que resolveu. Escreva no dia, porque no fim do mês o conserto já foi esquecido.</p>
+<p>Uma linha solta parece inútil. Três linhas com a mesma falha mostram a repetição: o mesmo erro voltando por caminhos diferentes. Aí você para de remendar o resultado e corrige a regra que produz o erro.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de ciências anotou por um mês as falhas do roteiro de laboratório feito com IA. Três linhas diziam a mesma coisa. Ele parou de acrescentar o aviso à mão e escreveu a exigência na ficha, uma vez.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Caderno de mudanças · Laboratório</span></div>
+<div class="janela-body">
+<div class="item doc"><span class="pin">1</span><span>02/09 · faltou o aviso do material aquecido · acrescentei à mão</span></div>
+<div class="item doc"><span>05/09 · lista de materiais longa demais · pedi até 8 itens</span></div>
+<div class="item doc"><span class="pin">2</span><span>12/09 · roteiro sem aviso de segurança · acrescentei à mão</span></div>
+<div class="item doc"><span class="pin">3</span><span>19/09 · faltou o aviso da lamparina · acrescentei à mão</span></div>
+<div class="item"><span><b>Conserto na regra:</b> 19/09 · mudei a ficha: "todo roteiro abre com o aviso de segurança", porque faltou 3 vezes</span></div>
+</div>
+</div>
+<figcaption>Os números 1, 2 e 3 foram marcados depois, ao reler o caderno. Essas três linhas contam o mesmo erro com palavras diferentes: faltou o aviso de segurança. Na terceira vez, o conserto saiu do roteiro e foi para a ficha.</figcaption>
+</figure>
+<div class="quiz" data-answer="c">
+<p class="qk">Teste-se</p>
+<p class="q">Você mudou uma regra da ficha há duas semanas e o resultado piorou. A cópia datada existe, mas você não anotou nada. O que você perdeu?</p>
+<button class="opt" data-fb="Não: a cópia datada guarda o texto anterior inteiro." data-k="a">A versão anterior, que vai ter de reescrever</button>
+<button class="opt" data-fb="A cópia devolve o texto, mas não diz que problema a mudança tentava resolver." data-k="b">Nada, a cópia resolve tudo sozinha</button>
+<button class="opt" data-fb="Isso. Você consegue voltar, mas sem saber que problema a regra nova resolvia. Pode desfazer uma boa decisão junto." data-k="c">O motivo da mudança</button>
+<p aria-live="polite" class="qfb"></p>
+</div>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/4</span></p>
-  <h3 class="ph">Crie o ponto de retorno de um material seu</h3>
-  <p class="pgoal">Pronto quando houver dois arquivos na pasta, a cópia datada e o original alterado, e uma linha escrita com o motivo. No computador, cerca de 10 minutos. No celular, pelo Google Drive: três pontinhos do arquivo › Fazer uma cópia.</p>
-  <p class="psafe">Você não apaga nada: o primeiro passo é justamente duplicar. Se a mudança não agradar, abra a cópia e recoloque o texto anterior. Nada aqui é enviado para ninguém.</p>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Escolha um arquivo de trabalho que já funciona: a ficha da aula 4, a sua prova do bimestre, a escala da equipe. Ainda não abra o arquivo.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Botão direito › Copiar, botão direito na pasta › Colar. Na cópia, botão direito › Renomear, com a data no começo. Exemplos: "2026-09-24 prova do bimestre" ou "2026-09-24 escala da equipe".</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Abra o original, sem data, e altere uma regra só: a que mais atrapalha hoje. Salve.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="4"> <span>No caderno de mudanças, de papel ou nota no celular, escreva uma linha com a data e o motivo. Fica pronto quando a linha responde "por quê", e não "o quê".</span></label></li>
-  </ol>
-  <p class="pdone">Você alterou um material de trabalho com a versão anterior guardada e o motivo registrado fora da sua memória.</p>
+<p class="pk">Pratique agora <span class="pcount">0/4</span></p>
+<h3 class="ph">Crie o ponto de retorno de um material seu</h3>
+<p class="pgoal">Pronto quando houver dois arquivos na pasta, a cópia datada e o original alterado, e uma linha escrita com o motivo. No computador, cerca de 10 minutos. No celular, pelo Google Drive: três pontinhos do arquivo › Fazer uma cópia.</p>
+<p class="psafe">Você não apaga nada: o primeiro passo é justamente duplicar. Se a mudança não agradar, abra a cópia e recoloque o texto anterior. Nada aqui é enviado para ninguém.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Escolha um arquivo de trabalho que já funciona: a ficha da aula 4, a sua prova do bimestre, a escala da equipe. Ainda não abra o arquivo.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Botão direito › Copiar, botão direito na pasta › Colar. Na cópia, botão direito › Renomear, com a data no começo. Exemplos: "2026-09-24 prova do bimestre" ou "2026-09-24 escala da equipe".</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Abra o original, sem data, e altere uma regra só: a que mais atrapalha hoje. Salve.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>No caderno de mudanças, de papel ou nota no celular, escreva uma linha com a data e o motivo. Fica pronto quando a linha responde "por quê", e não "o quê".</span></label></li>
+</ol>
+<p class="pdone">Você alterou um material de trabalho com a versão anterior guardada e o motivo registrado fora da sua memória.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>Ponto de retorno</h3>
-    <ol>
-      <li><span><b>Cópia datada</b>duplique antes de mexer, com ano-mês-dia no começo do nome.</span></li>
-      <li><span><b>O porquê</b>uma linha com a data e a razão. O quê, o arquivo já mostra.</span></li>
-      <li><span><b>Caderno de mudanças</b>também guarda as falhas: data, o que quebrou, o menor conserto. Repetiu três vezes, mude a regra.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você já sabe mudar um material de trabalho com um caminho de volta garantido.</p>
-    <p class="na-action">Hoje, repita o gesto em outro arquivo que você usa toda semana, como o molde de pedido da aula 5: cópia datada, uma mudança e a linha do motivo no caderno de mudanças.</p>
-    <p class="na-hook">Na próxima aula você fecha a trilha. Com pasta, ficha, molde e ponto de retorno no lugar, falta decidir o que você entrega à IA e o que continua seu.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>Ponto de retorno</h3>
+<ol>
+<li><span><b>Cópia datada</b>duplique antes de mexer, com ano-mês-dia no começo do nome.</span></li>
+<li><span><b>O porquê</b>uma linha com a data e a razão. O quê, o arquivo já mostra.</span></li>
+<li><span><b>Caderno de mudanças</b>também guarda as falhas: data, o que quebrou, o menor conserto. Repetiu três vezes, mude a regra.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você já sabe mudar um material de trabalho com um caminho de volta garantido.</p>
+<p class="na-action">Hoje, repita o gesto em outro arquivo que você usa toda semana, como o molde de pedido da aula 5: cópia datada, uma mudança e a linha do motivo no caderno de mudanças.</p>
+<p class="na-hook">Na próxima aula você fecha a trilha. Com pasta, ficha, molde e ponto de retorno no lugar, falta decidir o que você entrega à IA e o que continua seu.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#aula-7">próxima aula →</a></nav>
-<p class="aula-pe">Aula 6 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 6 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-6">
+<script id="cards-6" type="application/json">
 [
   {"front":"Você alterou uma regra hoje e o resultado veio pior. O que precisava existir antes da alteração para você voltar em um minuto?","back":"Uma duplicata do arquivo com a data no começo do nome, feita antes de mexer. Sem ela, o texto bom foi coberto."},
   {"front":"Dois registros da mesma mudança: \"troquei o terceiro parágrafo\" e \"tirei o tom formal porque a equipe achou distante\". Qual serve daqui a três meses?","back":"O segundo. O primeiro se enxerga abrindo as duas versões; o segundo guarda a razão, que não está em nenhuma delas."},
@@ -1061,174 +1024,167 @@ Nunca pode: usar conteúdo fora do bimestre</pre></div>
 ]
 </script>
 </section>
-<section class="view" id="v-aula-7" data-aula="7" data-tempo="16min">
+<section class="view" data-aula="7" data-tempo="16min" id="v-aula-7">
 <div class="aula">
 <header class="a-hero">
-  <p class="kicker">Aula 7 de 7</p>
-  <h1>O que você delega e o que <em>continua seu</em></h1>
-  <figure class="cena"><img src="assets/img/aula-7.webp" width="1280" height="720" alt="Uma gestora, à mesa do escritório, divide numa folha as tarefas da semana em três colunas antes de decidir o que entrega à IA."></figure>
-  <p class="promise">Você tem o seu ambiente de IA montado e uma lista escrita: o que delega, o que confere e o que fica só com você.</p>
-  <p class="why">As peças já existem, cada uma no seu lugar. Falta decidir onde a delegação termina. Sem essa linha escrita antes, ela é traçada no meio de um dia corrido. E aí quase sempre sai pelo lado errado.</p>
-  <div class="em1min">
-    <p class="k">Em 1 minuto</p>
-    <ol>
-      <li>A IA pode fazer a tarefa. Quem responde pelo resultado continua sendo você.</li>
-      <li>Toda tarefa com IA cabe em um de três níveis: <b>faz sozinho</b>, <b>faz e mostra</b>, <b>só sugere</b>. O resto é só seu, sem IA.</li>
-      <li>Uma conferência de quinze minutos por semana mantém a lista verdadeira.</li>
-    </ol>
-  </div>
+<p class="kicker">Aula 7 de 7</p>
+<h1>O que você delega e o que <em>continua seu</em></h1>
+<figure class="cena"><img alt="Uma gestora, à mesa do escritório, divide numa folha as tarefas da semana em três colunas antes de decidir o que entrega à IA." height="720" src="assets/img/aula-7.webp" width="1280"/></figure>
+<p class="promise">Você tem o seu ambiente de IA montado e uma lista escrita: o que delega, o que confere e o que fica só com você.</p>
+<p class="why">As peças já existem, cada uma no seu lugar. Falta decidir onde a delegação termina. Sem essa linha escrita antes, ela é traçada no meio de um dia corrido. E aí quase sempre sai pelo lado errado.</p>
+<div class="em1min">
+<p class="k">Em 1 minuto</p>
+<ol>
+<li>A IA pode fazer a tarefa. Quem responde pelo resultado continua sendo você.</li>
+<li>Toda tarefa com IA cabe em um de três níveis: <b>faz sozinho</b>, <b>faz e mostra</b>, <b>só sugere</b>. O resto é só seu, sem IA.</li>
+<li>Uma conferência de quinze minutos por semana mantém a lista verdadeira.</li>
+</ol>
+</div>
 </header>
-
 <section class="step" data-kind="pratica">
-  <h2><span class="n">1</span>Você delega o fazer, nunca o responder</h2>
-  <p>Uma tarefa tem duas partes. Uma é o trabalho de produzir. A outra é alguém responder pelo resultado. A IA pode assumir a primeira. A segunda continua sua, mesmo quando você não escreveu uma palavra.</p>
-  <p>Delegar, neste curso, é isso: você entrega o fazer e segura o responder.</p>
-  <p data-ex="gestora">Uma gestora de central de atendimento pediu o relatório mensal para a diretoria. Enviou sem ler a última tabela. Na reunião, quem explicou o erro foi ela.</p>
-  <figure class="largo">
-    <div class="tela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
-      <div class="tela-body">
-        <p class="msg eu"><span class="quem">Você</span>Monte o relatório de agosto para a diretoria com os números da planilha abaixo. Termine com uma tabela de chamados.
+<h2><span class="n">1</span>Você delega o fazer, nunca o responder</h2>
+<p>Uma tarefa tem duas partes. Uma é o trabalho de produzir. A outra é alguém responder pelo resultado. A IA pode assumir a primeira. A segunda continua sua, mesmo quando você não escreveu uma palavra.</p>
+<p>Delegar, neste curso, é isso: você entrega o fazer e segura o responder.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora de central de atendimento pediu o relatório mensal para a diretoria. Enviou sem ler a última tabela. Na reunião, quem explicou o erro foi ela.</p>
+<figure class="largo">
+<div class="tela">
+<div class="tela-top"><i></i><i></i><i></i><span>Chat de IA</span></div>
+<div class="tela-body">
+<p class="msg eu"><span class="quem">Você</span>Monte o relatório de agosto para a diretoria com os números da planilha abaixo. Termine com uma tabela de chamados.
 [planilha colada aqui]
 Chamados resolvidos · 1.140
 Chamados reabertos · 312</p>
-        <p class="msg ia falha"><span class="quem">IA</span>Relatório de agosto — Central de Atendimento
+<p class="msg ia falha"><span class="quem">IA</span>Relatório de agosto — Central de Atendimento
 …
 Tabela final:
 Chamados resolvidos: 312
 Chamados reabertos: 1.140</p>
-      </div>
-      <p class="tela-nota ruim">Compare com a planilha: os dois números estão trocados. O texto veio bem escrito, e o nome no rodapé era o dela.</p>
-    </div>
-  </figure>
+</div>
+<p class="tela-nota ruim">Compare com a planilha: os dois números estão trocados. O texto veio bem escrito, e o nome no rodapé era o dela.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="pratica">
-  <h2><span class="n">2</span>Três níveis: faz sozinho, faz e mostra, só sugere</h2>
-  <p>O <span class="gterm" data-def="quanto a IA faz sem você conferir. Ex.: o professor deixa a IA resumir sozinha um texto que só ele vai ler; a gestora confere o aviso aos pacientes antes de enviar.">nível</span> diz quanto a IA faz sem você. <b>Faz sozinho</b>: você usa sem olhar, porque o erro custa quase nada. <b>Faz e mostra</b>: sai pronto e passa pelos seus olhos antes de seguir. <b>Só sugere</b>: a IA dá rascunho ou ideias, e quem escreve é você.</p>
-  <p>Fora dos três níveis fica o que é <b>só seu</b>: a IA não entra nem como rascunho. O nível não depende de a IA ser boa naquilo. Depende de quem assina e do que acontece se sair errado.</p>
-  <p data-ex="professor">Um professor de biologia distribuiu as tarefas da semana. Veja a lista dele.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Lista de delegação · Biologia</span></div>
-      <div class="janela-body">
-        <div class="item"><span><b>Faz sozinho</b> · a IA faz, ele usa sem conferir</span></div>
-        <div class="item doc dentro">Resumo de um artigo, só para ele ler</div>
-        <div class="item"><span><b>Faz e mostra</b> · a IA faz, ele confere antes de usar</span></div>
-        <div class="item doc dentro">Lista de exercícios de revisão: ele lê as dez questões antes de imprimir</div>
-        <div class="item"><span><b>Só sugere</b> · a IA dá ideias, ele escreve</span></div>
-        <div class="item doc dentro">Avaliação do bimestre: a IA sugere questões, ele monta a prova</div>
-        <div class="item"><span><b>Só dele</b> · sem IA</span></div>
-        <div class="item doc dentro">A nota final de cada aluno</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span><b>Sai com o seu nome ou vai para alunos, famílias ou colegas?</b> Então não pode ser "faz sozinho".</span></li>
-      <li><span><b>O erro dá retrabalho para outras pessoas?</b> Então é, no mínimo, "faz e mostra".</span></li>
-      <li><span><b>Não dá para conferir em poucos minutos?</b> Então é "só sugere".</span></li>
-    </ol>
-    <figcaption>As três perguntas são um filtro. Passe cada tarefa por elas, na ordem.</figcaption>
-  </figure>
-  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>Algumas tarefas parecem caber em dois níveis. Na dúvida, comece por "só sugere". Depois que der certo três vezes, ela ganha mais autonomia. Começar solto demais e errar custa mais caro.</p></div>
+<h2><span class="n">2</span>Três níveis: faz sozinho, faz e mostra, só sugere</h2>
+<p>O <span class="gterm" data-def="quanto a IA faz sem você conferir. Ex.: o professor deixa a IA resumir sozinha um texto que só ele vai ler; a gestora confere o aviso aos pacientes antes de enviar.">nível</span> diz quanto a IA faz sem você. <b>Faz sozinho</b>: você usa sem olhar, porque o erro custa quase nada. <b>Faz e mostra</b>: sai pronto e passa pelos seus olhos antes de seguir. <b>Só sugere</b>: a IA dá rascunho ou ideias, e quem escreve é você.</p>
+<p>Fora dos três níveis fica o que é <b>só seu</b>: a IA não entra nem como rascunho. O nível não depende de a IA ser boa naquilo. Depende de quem assina e do que acontece se sair errado.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de biologia distribuiu as tarefas da semana. Veja a lista dele.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Lista de delegação · Biologia</span></div>
+<div class="janela-body">
+<div class="item"><span><b>Faz sozinho</b> · a IA faz, ele usa sem conferir</span></div>
+<div class="item doc dentro">Resumo de um artigo, só para ele ler</div>
+<div class="item"><span><b>Faz e mostra</b> · a IA faz, ele confere antes de usar</span></div>
+<div class="item doc dentro">Lista de exercícios de revisão: ele lê as dez questões antes de imprimir</div>
+<div class="item"><span><b>Só sugere</b> · a IA dá ideias, ele escreve</span></div>
+<div class="item doc dentro">Avaliação do bimestre: a IA sugere questões, ele monta a prova</div>
+<div class="item"><span><b>Só dele</b> · sem IA</span></div>
+<div class="item doc dentro">A nota final de cada aluno</div>
+</div>
+</div>
+<ol class="passos">
+<li><span><b>Sai com o seu nome ou vai para alunos, famílias ou colegas?</b> Então não pode ser "faz sozinho".</span></li>
+<li><span><b>O erro dá retrabalho para outras pessoas?</b> Então é, no mínimo, "faz e mostra".</span></li>
+<li><span><b>Não dá para conferir em poucos minutos?</b> Então é "só sugere".</span></li>
+</ol>
+<figcaption>As três perguntas são um filtro. Passe cada tarefa por elas, na ordem.</figcaption>
+</figure>
+<div class="calma"><p><span class="k">Se travou aqui, é normal</span>Algumas tarefas parecem caber em dois níveis. Na dúvida, comece por "só sugere". Depois que der certo três vezes, ela ganha mais autonomia. Começar solto demais e errar custa mais caro.</p></div>
 </section>
-
 <section class="step" data-kind="pratica">
-  <h2><span class="n">3</span>O tempo de conferir entra na conta</h2>
-  <p>A conta comum é curta demais: levava quarenta minutos, a resposta veio em um, ganhei trinta e nove. Falta uma parte. Conferir custa tempo, e esse tempo sai do mesmo dia.</p>
-  <p>A conta honesta soma três parcelas: escrever o pedido, conferir e ajustar. Se a soma chega perto do tempo de fazer à mão, delegar não devolve nada.</p>
-  <p data-ex="gestora">Uma gestora de operações passou a escala de férias da equipe para a IA. Depois fez as contas das duas tarefas daquela semana.</p>
-  <figure class="largo">
-    <div class="lado">
-      <div class="antes"><span class="rot">Escala de férias</span><p><b>À mão:</b> 20 minutos.</p><p><b>Com IA:</b> 2 de pedido + 18 conferindo feriado, turno e limite de dias. Ganho: nenhum.</p></div>
-      <div class="depois"><span class="rot">E-mail da escala</span><p><b>À mão:</b> 15 minutos.</p><p><b>Com IA:</b> 1 de pedido + 2 de conferência. Ganho: 12 minutos.</p></div>
-      <p class="saldo"><b>Saldo:</b> ela voltou a montar a escala à mão e delegou o e-mail que a acompanha.</p>
-    </div>
-  </figure>
+<h2><span class="n">3</span>O tempo de conferir entra na conta</h2>
+<p>A conta comum é curta demais: levava quarenta minutos, a resposta veio em um, ganhei trinta e nove. Falta uma parte. Conferir custa tempo, e esse tempo sai do mesmo dia.</p>
+<p>A conta honesta soma três parcelas: escrever o pedido, conferir e ajustar. Se a soma chega perto do tempo de fazer à mão, delegar não devolve nada.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Uma gestora de operações passou a escala de férias da equipe para a IA. Depois fez as contas das duas tarefas daquela semana.</p>
+<figure class="largo">
+<div class="lado">
+<div class="antes"><span class="rot">Escala de férias</span><p><b>À mão:</b> 20 minutos.</p><p><b>Com IA:</b> 2 de pedido + 18 conferindo feriado, turno e limite de dias. Ganho: nenhum.</p></div>
+<div class="depois"><span class="rot">E-mail da escala</span><p><b>À mão:</b> 15 minutos.</p><p><b>Com IA:</b> 1 de pedido + 2 de conferência. Ganho: 12 minutos.</p></div>
+<p class="saldo"><b>Saldo:</b> ela voltou a montar a escala à mão e delegou o e-mail que a acompanha.</p>
+</div>
+</figure>
 </section>
-
 <section class="step" data-kind="pratica">
-  <h2><span class="n">4</span>A lista só vale com data marcada</h2>
-  <p>A lista envelhece rápido, e por um motivo bom: você fica melhor em pedir. Tarefa que deu certo três vezes pode ganhar mais autonomia: sai de "só sugere" e vai para "faz e mostra". Tarefa que errou volta a ter conferência.</p>
-  <p>Por isso a lista precisa de um horário fixo, uma vez por semana, quinze minutos. O porquê de cada troca vai numa linha do caderno de mudanças. Não fez a aula 6? Uma nota no celular serve.</p>
-  <p data-ex="professor">Um professor de geografia marcou a conferência para sexta, às dezesseis horas, logo depois da última aula. Em quatro semanas, duas tarefas ganharam mais autonomia e uma voltou a ter conferência.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Agenda · sexta-feira</span></div>
-      <div class="janela-body">
-        <div class="item"><b>16h00 às 16h15 · Conferência da lista · repete toda semana</b></div>
-        <div class="item doc dentro"><span class="pin">1</span> Rever a lista: o que ganha autonomia, o que volta a ter conferência</div>
-        <div class="item doc dentro"><span class="pin">2</span> Conferir dois materiais feitos com IA na semana</div>
-        <div class="item doc dentro"><span class="pin">3</span> Ajustar uma regra da ficha, com o porquê anotado</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>Primeiro a lista, antes de mexer em qualquer arquivo.</span></li>
-      <li><span class="pin">2</span><span>Dois materiais bastam para ver se o nível ainda serve.</span></li>
-      <li><span class="pin">3</span><span>Uma regra por semana. Antes de mexer, a cópia datada.</span></li>
-    </ol>
-  </figure>
+<h2><span class="n">4</span>A lista só vale com data marcada</h2>
+<p>A lista envelhece rápido, e por um motivo bom: você fica melhor em pedir. Tarefa que deu certo três vezes pode ganhar mais autonomia: sai de "só sugere" e vai para "faz e mostra". Tarefa que errou volta a ter conferência.</p>
+<p>Por isso a lista precisa de um horário fixo, uma vez por semana, quinze minutos. O porquê de cada troca vai numa linha do caderno de mudanças. Não fez a aula 6? Uma nota no celular serve.</p>
+<p data-ex="professor" data-exlbl="Na prática · Professor">Um professor de geografia marcou a conferência para sexta, às dezesseis horas, logo depois da última aula. Em quatro semanas, duas tarefas ganharam mais autonomia e uma voltou a ter conferência.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Agenda · sexta-feira</span></div>
+<div class="janela-body">
+<div class="item"><b>16h00 às 16h15 · Conferência da lista · repete toda semana</b></div>
+<div class="item doc dentro"><span class="pin">1</span> Rever a lista: o que ganha autonomia, o que volta a ter conferência</div>
+<div class="item doc dentro"><span class="pin">2</span> Conferir dois materiais feitos com IA na semana</div>
+<div class="item doc dentro"><span class="pin">3</span> Ajustar uma regra da ficha, com o porquê anotado</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>Primeiro a lista, antes de mexer em qualquer arquivo.</span></li>
+<li><span class="pin">2</span><span>Dois materiais bastam para ver se o nível ainda serve.</span></li>
+<li><span class="pin">3</span><span>Uma regra por semana. Antes de mexer, a cópia datada.</span></li>
+</ol>
+</figure>
 </section>
-
 <section class="step" data-kind="pratica">
-  <h2><span class="n">5</span>Juntas, as peças viram um ambiente</h2>
-  <p>Separadas, as peças do curso são hábitos soltos. Juntas, na mesma pasta, viram um <span class="gterm" data-def="a pasta onde as suas peças de trabalho com IA ficam juntas: ficha, molde, cópias datadas e lista de delegação.">ambiente</span>. Cada pedido nasce na pasta, obedece às regras escritas e tem caminho de volta.</p>
-  <p>Não precisa ter todas as peças. Comece pela que você já tem. A lista de delegação desta aula sozinha já vale.</p>
-  <p data-ex="gestora">Rosana, gestora de um serviço de agendamento, juntou tudo em um mês. Um dia o aviso de reagendamento saiu com um prazo vencido. A cópia datada devolveu a versão boa em dois minutos. Veja a pasta dela.</p>
-  <figure class="largo">
-    <div class="janela">
-      <div class="tela-top"><i></i><i></i><i></i><span>Documentos</span></div>
-      <div class="janela-body">
-        <div class="item pasta"><span class="pin">1</span> Atendimento e agendamento</div>
-        <div class="item doc dentro"><span class="pin">2</span> ficha de orientação</div>
-        <div class="item doc dentro"><span class="pin">3</span> 2026-09-03 molde do aviso</div>
-        <div class="item doc dentro">molde do aviso</div>
-        <div class="item doc dentro"><span class="pin">4</span> lista de delegação</div>
-      </div>
-    </div>
-    <ol class="passos">
-      <li><span class="pin">1</span><span>A pasta da frente de trabalho, dentro de Documentos. Tudo mora nela.</span></li>
-      <li><span class="pin">2</span><span>As regras do setor, escritas uma vez.</span></li>
-      <li><span class="pin">3</span><span>A versão boa do molde, congelada com a data. Logo abaixo, o molde sem data, que é o que está em uso.</span></li>
-      <li><span class="pin">4</span><span>A lista que você escreve agora. Se ainda não tem a pasta, ela vale sozinha.</span></li>
-    </ol>
-  </figure>
+<h2><span class="n">5</span>Juntas, as peças viram um ambiente</h2>
+<p>Separadas, as peças do curso são hábitos soltos. Juntas, na mesma pasta, viram um <span class="gterm" data-def="a pasta onde as suas peças de trabalho com IA ficam juntas: ficha, molde, cópias datadas e lista de delegação.">ambiente</span>. Cada pedido nasce na pasta, obedece às regras escritas e tem caminho de volta.</p>
+<p>Não precisa ter todas as peças. Comece pela que você já tem. A lista de delegação desta aula sozinha já vale.</p>
+<p data-ex="gestora" data-exlbl="Na prática · Gestora">Rosana, gestora de um serviço de agendamento, juntou tudo em um mês. Um dia o aviso de reagendamento saiu com um prazo vencido. A cópia datada devolveu a versão boa em dois minutos. Veja a pasta dela.</p>
+<figure class="largo">
+<div class="janela">
+<div class="tela-top"><i></i><i></i><i></i><span>Documentos</span></div>
+<div class="janela-body">
+<div class="item pasta"><span class="pin">1</span> Atendimento e agendamento</div>
+<div class="item doc dentro"><span class="pin">2</span> ficha de orientação</div>
+<div class="item doc dentro"><span class="pin">3</span> 2026-09-03 molde do aviso</div>
+<div class="item doc dentro">molde do aviso</div>
+<div class="item doc dentro"><span class="pin">4</span> lista de delegação</div>
+</div>
+</div>
+<ol class="passos">
+<li><span class="pin">1</span><span>A pasta da frente de trabalho, dentro de Documentos. Tudo mora nela.</span></li>
+<li><span class="pin">2</span><span>As regras do setor, escritas uma vez.</span></li>
+<li><span class="pin">3</span><span>A versão boa do molde, congelada com a data. Logo abaixo, o molde sem data, que é o que está em uso.</span></li>
+<li><span class="pin">4</span><span>A lista que você escreve agora. Se ainda não tem a pasta, ela vale sozinha.</span></li>
+</ol>
+</figure>
 </section>
-
 <section class="practice" data-mode="tarefa">
-  <p class="pk">Pratique agora <span class="pcount">0/4</span></p>
-  <h3 class="ph">Escreva a sua lista de delegação</h3>
-  <p class="pgoal">Pronto quando as tarefas de uma semana estiverem nos três níveis, o que é só seu estiver separado e houver dia e hora na agenda. No papel ou numa nota do celular, cerca de 12 minutos.</p>
-  <p class="psafe">A lista é sua e não vai para lugar nenhum. Escreva à caneta, se preferir. Nenhum nível é definitivo: mudar uma tarefa de nível é sinal de que a lista funciona.</p>
-  <ol class="psteps">
-    <li><label><input type="checkbox" data-ptask="1"> <span>Anote de dez a quinze tarefas da última semana, inclusive as que parecem pequenas demais.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="2"> <span>Faça três colunas, uma para cada nível: faz sozinho, faz e mostra, só sugere. Passe cada tarefa pelas três perguntas: sai com o seu nome, o erro dá retrabalho, dá para conferir rápido.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="3"> <span>Abaixo das colunas, escreva "só meu". Leve para lá o que a IA não faz nem como rascunho, com uma linha de porquê.</span></label></li>
-    <li><label><input type="checkbox" data-ptask="4"> <span>Marque na agenda a conferência semanal de quinze minutos. Guarde a lista na pasta de trabalho. Sem pasta? Na primeira página do caderno.</span></label></li>
-  </ol>
-  <p class="pdone">Você tem o ambiente montado e a sua lista escrita do que delega, do que confere e do que continua seu.</p>
+<p class="pk">Pratique agora <span class="pcount">0/4</span></p>
+<h3 class="ph">Escreva a sua lista de delegação</h3>
+<p class="pgoal">Pronto quando as tarefas de uma semana estiverem nos três níveis, o que é só seu estiver separado e houver dia e hora na agenda. No papel ou numa nota do celular, cerca de 12 minutos.</p>
+<p class="psafe">A lista é sua e não vai para lugar nenhum. Escreva à caneta, se preferir. Nenhum nível é definitivo: mudar uma tarefa de nível é sinal de que a lista funciona.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> <span>Anote de dez a quinze tarefas da última semana, inclusive as que parecem pequenas demais.</span></label></li>
+<li><label><input data-ptask="2" type="checkbox"/> <span>Faça três colunas, uma para cada nível: faz sozinho, faz e mostra, só sugere. Passe cada tarefa pelas três perguntas: sai com o seu nome, o erro dá retrabalho, dá para conferir rápido.</span></label></li>
+<li><label><input data-ptask="3" type="checkbox"/> <span>Abaixo das colunas, escreva "só meu". Leve para lá o que a IA não faz nem como rascunho, com uma linha de porquê.</span></label></li>
+<li><label><input data-ptask="4" type="checkbox"/> <span>Marque na agenda a conferência semanal de quinze minutos. Guarde a lista na pasta de trabalho. Sem pasta? Na primeira página do caderno.</span></label></li>
+</ol>
+<p class="pdone">Você tem o ambiente montado e a sua lista escrita do que delega, do que confere e do que continua seu.</p>
 </section>
-
 <div class="fecho">
-  <div class="cola">
-    <p class="k">Cola da aula</p>
-    <h3>O que delegar</h3>
-    <ol>
-      <li><span><b>Três níveis</b>faz sozinho, faz e mostra, só sugere. Fora deles, o que é só seu, sem IA. Decide quem assina e o custo do erro.</span></li>
-      <li><span><b>Conta honesta</b>pedido + conferência + ajuste. Perto do tempo à mão, não delegue.</span></li>
-      <li><span><b>Conferência semanal</b>quinze minutos com hora marcada. Deu certo três vezes, ganha autonomia. Errou, volta a ter conferência.</span></li>
-    </ol>
-  </div>
-  <div class="next-action">
-    <p class="nak">Seu próximo passo</p>
-    <p class="na-win">Você montou o seu ambiente de IA e sabe dizer, por escrito, o que delega, o que confere e o que continua seu.</p>
-    <p class="na-action">Hoje, encaixe as tarefas da próxima semana nos três níveis e guarde a lista onde você guarda o trabalho: na pasta, ou no caderno.</p>
-    <p class="na-hook">O curso termina aqui. O uso começa na primeira conferência que você marcou. Em um mês, você decide o nível de uma tarefa nova sem reler nada.</p>
-  </div>
+<div class="cola">
+<p class="k">Cola da aula</p>
+<h3>O que delegar</h3>
+<ol>
+<li><span><b>Três níveis</b>faz sozinho, faz e mostra, só sugere. Fora deles, o que é só seu, sem IA. Decide quem assina e o custo do erro.</span></li>
+<li><span><b>Conta honesta</b>pedido + conferência + ajuste. Perto do tempo à mão, não delegue.</span></li>
+<li><span><b>Conferência semanal</b>quinze minutos com hora marcada. Deu certo três vezes, ganha autonomia. Errou, volta a ter conferência.</span></li>
+</ol>
+</div>
+<div class="next-action">
+<p class="nak">Seu próximo passo</p>
+<p class="na-win">Você montou o seu ambiente de IA e sabe dizer, por escrito, o que delega, o que confere e o que continua seu.</p>
+<p class="na-action">Hoje, encaixe as tarefas da próxima semana nos três níveis e guarde a lista onde você guarda o trabalho: na pasta, ou no caderno.</p>
+<p class="na-hook">O curso termina aqui. O uso começa na primeira conferência que você marcou. Em um mês, você decide o nível de uma tarefa nova sem reler nada.</p>
+</div>
 </div>
 <nav class="lnav"><a href="#trilha">← trilha</a><a class="next" href="#trilha">ver minha trilha →</a></nav>
-<p class="aula-pe">Aula 7 · OSWork · INEMA.CLUB PRO</p>
+<p class="aula-pe">Aula 7 · OSWork v6 · INEMA.CLUB PRO</p>
 </div>
-<script type="application/json" id="cards-7">
+<script id="cards-7" type="application/json">
 [
   {"front":"Uma tarefa que a IA faz muito bem sai da sua sala com o seu nome. Em que nível ela entra?","back":"Em faz e mostra, no mínimo. O nível se decide por quem responde depois de enviado, e não pela qualidade do texto."},
   {"front":"Uma tarefa leva doze minutos à mão e sete para conferir quando vem pronta. Vale entregar para a IA?","back":"Vale pouco. Você ganha cinco minutos e leva junto o risco de deixar passar um erro. Comece pelo que se confere rápido."},
@@ -1237,7 +1193,6 @@ Chamados reabertos: 1.140</p>
 ]
 </script>
 </section>
-
 <script src="assets/curso.js"></script>
 </body>
 </html>

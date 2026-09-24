@@ -1,0 +1,14 @@
+{
+  "en": {"pedido completo": "complete request", "critério de pronto": "definition of done", "régua de conferência": "checking checklist",
+         "régua": "checklist", "frente de trabalho": "work front", "ficha de orientação": "guidance sheet", "ficha": "sheet",
+         "molde": "template", "cópia datada": "dated copy", "caderno de mudanças": "change log notebook",
+         "faz sozinho": "does it alone", "faz e mostra": "does it and shows you", "só sugere": "only suggests", "só seu": "yours only",
+         "nível": "level", "o dado que você já sabe": "the fact you already know", "documento original": "original document",
+         "contexto": "context", "Aa": "Aa"},
+  "es": {"pedido completo": "pedido completo", "critério de pronto": "criterio de terminado", "régua de conferência": "regla de verificación",
+         "régua": "regla", "frente de trabalho": "frente de trabajo", "ficha de orientação": "ficha de orientación", "ficha": "ficha",
+         "molde": "plantilla", "cópia datada": "copia con fecha", "caderno de mudanças": "cuaderno de cambios",
+         "faz sozinho": "lo hace solo", "faz e mostra": "lo hace y te muestra", "só sugere": "solo sugiere", "só seu": "solo tuyo",
+         "nível": "nivel", "o dado que você já sabe": "el dato que ya conoces", "documento original": "documento original",
+         "contexto": "contexto", "Aa": "Aa"}
+}

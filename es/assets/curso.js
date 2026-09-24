@@ -6,34 +6,7 @@
 (function(){
   "use strict";
   /*L-INICIO — textos do motor; o traduzir-curso.py troca este bloco inteiro por idioma. {n} = número. */
-  var L={
-    "lido":"lido","concluida":"concluída ✓","andamento":"em andamento","comecar":"começar →",
-    "continuar":"Continuar de onde parou","comecarCurso":"Começar pela aula 1","revisao":"Revisar","aula":"Aula",
-    "revisarN":"revisar {n}","aulasConcluidas":"aulas concluídas","faltam":"para terminar","min":"min",
-    "dica":"Dica: o botão <b>Aa</b> aumenta a letra. Seu progresso fica salvo sozinho neste navegador.","entendi":"entendi",
-    "promessa":"Ao fim desta aula",
-    "fechoTit":"Fechar a aula","fechoTxt":"Em uma frase: o que desta aula você vai usar primeiro no seu trabalho? (opcional, fica só com você)",
-    "concluir":"concluir aula","concluidaTit":"Aula concluída.",
-    "concluidaTxt":"{n} perguntas desta aula foram para o <b>revisar</b>. Elas voltam sozinhas nos próximos dias, na hora certa de lembrar.","salvo":"Seu progresso foi salvo.",
-    "revisarAgora":"revisar agora","refazer":"refazer a prática",
-    "mostrar":"mostrar resposta","deNovo":"errei","bom":"lembrei","facil":"fácil",
-    "nadaRevisar":"Nada para revisar agora. As perguntas voltam sozinhas nos próximos dias.",
-    "menu":"Menu","jornada":"Minha jornada","exercicios":"Práticas do curso","tema":"Tema","idioma":"Idioma",
-    "temas":{"papel":"papel","escuro":"escuro","sepia":"sépia"},
-    "tamanho":"Tamanho da letra","entrelinha":"Espaço entre linhas","restaurar":"restaurar padrão","fechar":"fechar","menor":"menor","maior":"maior","menos":"menos","mais":"mais",
-    "jProg":"Progresso","jCap":"O que você já consegue fazer","jCapVazio":"Ainda nenhuma aula concluída — tudo bem, uma de cada vez.",
-    "jTempo":"Tempo","investido":"investido","restante":"restante","jGrifos":"Seus grifos","jSemGrifo":"Nenhum grifo ainda. Selecione um trecho do texto para grifar.",
-    "jPend":"sem pressa — {n} perguntas esperando por você","jPend0":"nada esperando por você agora",
-    "jFim":"Você concluiu a trilha inteira. O que estava no papel agora está no seu trabalho.",
-    "capRe":"^(ao fim desta aula,? )?você (consegue|tem) ",
-    "exportar":"salvar meu progresso (.json)","importar":"trazer progresso salvo","zerar":"zerar tudo",
-    "zerarQ":"Apagar todo o seu progresso deste curso?","arqInv":"Arquivo inválido.",
-    "irAte":"ir até ela","resetar":"refazer","feito":"feita","pendente":"pendente",
-    "grifar":"grifar","grifarCartao":"grifar + pergunta","novoCartao":"Nova pergunta de revisão","frente":"Pergunta","verso":"Resposta",
-    "ceHint":"Escreva como <b>pergunta</b>: lembrar sozinho fixa mais do que reler.","salvar":"salvar","cancelar":"cancelar",
-    "copiar":"copiar","copiado":"copiado ✓","certo":"Certo.","quase":"Quase.","aCerta":"A certa está marcada.",
-    "exemplo":"Na prática","compare":"Toque para comparar os dois casos:"
-  };
+  var L={"lido": "leído", "concluida": "terminada ✓", "andamento": "en progreso", "comecar": "empezar →", "continuar": "Continuar desde donde te quedaste", "comecarCurso": "Empezar por la lección 1", "revisao": "Revisar", "aula": "Lección", "revisarN": "revisar {n}", "aulasConcluidas": "lecciones terminadas", "faltam": "para terminar", "min": "min", "dica": "Consejo: el botón <b>Aa</b> aumenta el tamaño de la letra. Tu progreso se guarda solo en este navegador.", "entendi": "lo entendí", "promessa": "Al final de esta lección", "fechoTit": "Cerrar la lección", "fechoTxt": "En una frase: ¿qué de esta lección vas a usar primero en tu trabajo? (opcional, solo para ti)", "concluir": "terminar la lección", "concluidaTit": "Lección terminada.", "concluidaTxt": "{n} preguntas de esta lección fueron a <b>revisar</b>. Vuelven solas en los próximos días, en el momento justo de recordarlas.", "salvo": "Tu progreso se guardó.", "revisarAgora": "revisar ahora", "refazer": "repetir la práctica", "mostrar": "mostrar la respuesta", "deNovo": "me equivoqué", "bom": "recordé", "facil": "fácil", "nadaRevisar": "No hay nada para revisar ahora. Las preguntas vuelven solas en los próximos días.", "menu": "Menú", "jornada": "Mi recorrido", "exercicios": "Prácticas del curso", "tema": "Tema", "idioma": "Idioma", "temas": {"papel": "papel", "escuro": "oscuro", "sepia": "sepia"}, "tamanho": "Tamaño de la letra", "entrelinha": "Espacio entre líneas", "restaurar": "restaurar el valor predeterminado", "fechar": "cerrar", "menor": "menor", "maior": "mayor", "menos": "menos", "mais": "más", "jProg": "Progreso", "jCap": "Lo que ya puedes hacer", "jCapVazio": "Todavía no hay ninguna lección completada — está bien, una cosa a la vez.", "jTempo": "Tiempo", "investido": "invertido", "restante": "restante", "jGrifos": "Tus resaltados", "jSemGrifo": "Todavía no hay ningún resaltado. Selecciona un fragmento del texto para resaltarlo.", "jPend": "sin prisa — {n} preguntas esperando por ti", "jPend0": "nada esperando por ti ahora", "jFim": "Completaste toda la ruta. Lo que estaba en el papel ahora está en tu trabajo.", "capRe": "^(al final de esta lección,? )?(ya )?(puedes|podrás|tienes|tendrás) ", "exportar": "guardar mi progreso (.json)", "importar": "traer progreso guardado", "zerar": "reiniciar todo", "zerarQ": "¿Borrar todo tu progreso de este curso?", "arqInv": "Archivo inválido.", "irAte": "ir hasta ahí", "resetar": "rehacer", "feito": "hecha", "pendente": "pendiente", "grifar": "resaltar", "grifarCartao": "resaltar + pregunta", "novoCartao": "Nueva pregunta de repaso", "frente": "Pregunta", "verso": "Respuesta", "ceHint": "Escribe como <b>pregunta</b>: hacerlo solo queda más que releer.", "salvar": "guardar", "cancelar": "cancelar", "copiar": "copiar", "copiado": "copiado ✓", "certo": "Correcto.", "quase": "Casi.", "aCerta": "La correcta está marcada.", "exemplo": "En la práctica", "compare": "Toca para comparar los dos casos:"};
   /*L-FIM*/
   function F(s,n){ return String(s).replace('{n}',n); }
   var CK=((document.querySelector('meta[name="curso"]')||{}).content)||'v6:curso';
