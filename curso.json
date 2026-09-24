@@ -1,0 +1,12 @@
+{
+  "id": "oswork6",
+  "titulo": "OSWork — Organize seu ambiente de IA",
+  "titulo_html": "Pare de <em>refazer</em> o que a IA te devolve",
+  "curso_curto": "OSWork",
+  "kicker": "OSWork · 7 aulas de uns 15 minutos",
+  "lead": "Em sete aulas curtas você organiza o seu jeito de usar IA: pastas por assunto, uma ficha com as suas regras, um molde de pedido e uma rotina simples para conferir. Sem instalar nada.",
+  "imagem_trilha": "assets/img/trilha.webp",
+  "alt_trilha": "Uma gestora e um professor, lado a lado numa mesa de trabalho arrumada, com pastas, um caderno e um notebook.",
+  "rodape": "OSWork · INEMA.CLUB PRO · <a href=\"landing.html\">sobre o curso</a>",
+  "landing": "landing.html"
+}
