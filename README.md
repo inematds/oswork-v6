@@ -9,3 +9,11 @@ Sem instalar nada. Abra `landing.html` ou `curso.html#trilha` — funciona offli
 - [Ficha deste curso](https://www.inema.club/cursos/286-oswork-v6-pare-de-refazer-o-que-a-ia-te-devolve/)
 - [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
 - [Todos os cursos](https://www.inema.club/cursos/)
+
+<!-- inema-backlink:v1 -->
+## Mais no INEMA.CLUB
+
+- [Ficha completa deste curso](https://www.inema.club/cursos/286-oswork-v6-pare-de-refazer-o-que-a-ia-te-devolve/)
+- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)
+<!-- /inema-backlink:v1 -->
